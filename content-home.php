@@ -78,7 +78,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			<div class="welcome_block">
+			<div id="welcome-section" class="welcome_block">
 			    <?php if ( of_get_option('blue_title') ) { ?>
 				<div class="advertisement_block">
 					<div class="container">

@@ -16,7 +16,7 @@ get_header(); ?>
 				</div>	
 			</div>
 			<?php } ?>
-			<div class="services_block">
+			<div id="services-section" class="services_block">				
 				<div class="container">
 					<div class="gutter">
 						<?php if ( of_get_option('top_title') ) { ?>

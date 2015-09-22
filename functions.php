@@ -40,7 +40,7 @@ function anaximander_flexslider() {
     if (!is_admin()) {
 
         // Enqueue FlexSlider JavaScript
-        wp_register_script('jquery_flexslider', get_stylesheet_directory_uri(). '/js/jquery.flexslider-min.js', array('jquery') );
+        wp_register_script('jquery_flexslider', get_stylesheet_directory_uri(). '/js/jquery.flexslider.js', array('jquery') );
         wp_enqueue_script('jquery_flexslider');
 
         // Enqueue FlexSlider Stylesheet        

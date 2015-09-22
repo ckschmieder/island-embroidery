@@ -65,6 +65,9 @@ function anaximander_flexslider() {
 
 add_action('init', 'anaximander_flexslider');
 
+// END FLEXSLIDER
+
+
 function my_scripts() {
         wp_enqueue_script( 'bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', array('jquery'), '3.3.5', true );
         wp_enqueue_script( 'my-script', get_stylesheet_directory_uri() . '/js/my-script.js', array( 'jquery' ), true);

@@ -5,7 +5,7 @@
  * @package Kage
  */
 get_header(); ?>
-		<div id="content">
+		<div id="content">		
 			<div class="pagetitle pagetitle_blog">
 				<div class="container">
 					<div class="gutter clearfix">

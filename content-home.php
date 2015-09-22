@@ -5,6 +5,37 @@
  */
 get_header(); ?>
 		<div id="content">
+		<!-- Flexslider demo content -->
+			<div class="container">
+				<div class="flexslider">
+					<div class="gutter clearfix">
+						<ul class="slides">
+							<li>
+								<img src="http://chris.matgargano.com/wp-content/uploads/2015/08/Custom-Apparel-Header-e1442893477560.jpg" />
+								<p class="flex-caption">Caption goes here</p>
+							</li>							
+							<li>
+								<img src="http://chris.matgargano.com/wp-content/uploads/2015/09/Custom-apparel_1000_330.jpg" />
+								<p class="flex-caption">Caption goes here</p>
+							</li>
+							<li>
+								<img src="http://chris.matgargano.com/wp-content/uploads/2015/09/IE_HomeImage1_1000_330.jpg" />
+								<p class="flex-caption">Caption goes here</p>
+							</li>
+							<li>
+								<img src="http://chris.matgargano.com/wp-content/uploads/2015/09/Promotional_Items_1_1000_330.jpg" />
+								<p class="flex-caption">Caption goes here</p>
+							</li>
+							<li>
+								<img src="http://chris.matgargano.com/wp-content/uploads/2015/09/shirt-spread_1000_330.jpg" />
+								<p class="flex-caption">Caption goes here</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+				
+		<!-- END Flexslider demo content -->
 		    <?php if ( of_get_option('top_image') ) { ?>
 			<div class="mainslider">
 				<div class="container">

@@ -35,6 +35,19 @@ form.search_form {
 	}
 }
 
+.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .my-container {
-	margin-top: 1px;
+	margin: 2px auto;
+	max-width: 1014px;
+}
+
+.advertisement {
+    border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border: 0px solid #000000;
 }

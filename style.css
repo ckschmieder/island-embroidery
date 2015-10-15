@@ -12,6 +12,10 @@ Updated: 2015-09-17 15:29:34
 	display: none;
 }*/
 
+h1 {
+	background-image:url(images/separe_texture.png);
+}
+
 form.search_form {
 	display: none;
 }

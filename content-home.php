@@ -49,8 +49,30 @@ get_header(); ?>
 			<?php } ?>
 			
 
-			<div id="welcome-section" class="welcome_block">
-			    <?php if ( of_get_option('blue_title') ) { ?>
+			<div id="welcome-section" class="welcome_block">			    
+				<?php if ( of_get_option('welcome_title') ) { ?>
+				<div class="container">
+					<div class="columnwrapp clearfix">
+					    <?php if ( of_get_option('welcome_image') ) { ?>
+						<div class="column2">						
+							<div class="gutter">
+								<img class="fullwidth" src="<?php echo esc_url(of_get_option('welcome_image')); ?>" alt="" />
+							</div>
+						</div>
+						<?php } ?>
+						<div class="column2">						
+							<div class="gutter">
+								<div class="welcome_text">
+									<h4><span><?php echo esc_html(of_get_option('welcome_title')); ?></span> <?php echo esc_html(of_get_option('welcome_title2')); ?></h4>
+									<p><?php echo esc_html(of_get_option('welcome_content')); ?></p>
+									<a class="button" href="<?php echo esc_url(of_get_option('welcome_button_link')); ?>"><?php echo esc_html(of_get_option('welcome_button_text')); ?></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php } ?>
+				<?php if ( of_get_option('blue_title') ) { ?>
 				<div class="advertisement_block">
 					<div class="container">
 						<div class="gutter">
@@ -70,28 +92,6 @@ get_header(); ?>
 										</tr>
 									</tbody>
 								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-				<?php } ?>
-				<?php if ( of_get_option('welcome_title') ) { ?>
-				<div class="container">
-					<div class="columnwrapp clearfix">
-					    <?php if ( of_get_option('welcome_image') ) { ?>
-						<div class="column2">						
-							<div class="gutter">
-								<img class="fullwidth" src="<?php echo esc_url(of_get_option('welcome_image')); ?>" alt="" />
-							</div>
-						</div>
-						<?php } ?>
-						<div class="column2">						
-							<div class="gutter">
-								<div class="welcome_text">
-									<h4><span><?php echo esc_html(of_get_option('welcome_title')); ?></span> <?php echo esc_html(of_get_option('welcome_title2')); ?></h4>
-									<p><?php echo esc_html(of_get_option('welcome_content')); ?></p>
-									<a class="button" href="<?php echo esc_url(of_get_option('welcome_button_link')); ?>"><?php echo esc_html(of_get_option('welcome_button_text')); ?></a>
-								</div>
 							</div>
 						</div>
 					</div>

@@ -62,11 +62,18 @@ form.search_form {
 
 /*#### Media Queries ####*/
 
+@media only screen and (min-width:1200px) {
+  
+  .container{
+    width:1170px;
+  }
+}
+
 @media only screen and (min-width:1153px) {
   
-    .mainslider{
-        margin-top: 25px;
-    }
+  .mainslider{
+      margin-top: 25px;
+  }
 }
 
 
@@ -93,7 +100,7 @@ form.search_form {
     flex-direction: column;
     align-items: center;
   }
-  
+
 }
 
 .container {

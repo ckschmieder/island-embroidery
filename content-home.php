@@ -47,6 +47,58 @@ get_header(); ?>
 				</div>	
 			</div>
 			<?php } ?>
+			
+
+			<div id="welcome-section" class="welcome_block">
+			    <?php if ( of_get_option('blue_title') ) { ?>
+				<div class="advertisement_block">
+					<div class="container">
+						<div class="gutter">
+							<div class="advertisement">
+								<table>
+									<tbody>
+										<tr>
+											<td class="tdw1">
+												<p class="adv_title"><?php echo esc_html(of_get_option('blue_title')); ?></p>
+											</td>
+											<td class="tdw2">
+												<p><?php echo esc_html(of_get_option('blue_content')); ?></p>
+											</td>
+											<td class="tdw3">
+												<a class="adv_button" href="<?php echo esc_url(of_get_option('blue_button_link')); ?>"><?php echo esc_html(of_get_option('blue_button_text')); ?></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php } ?>
+				<?php if ( of_get_option('welcome_title') ) { ?>
+				<div class="container">
+					<div class="columnwrapp clearfix">
+					    <?php if ( of_get_option('welcome_image') ) { ?>
+						<div class="column2">						
+							<div class="gutter">
+								<img class="fullwidth" src="<?php echo esc_url(of_get_option('welcome_image')); ?>" alt="" />
+							</div>
+						</div>
+						<?php } ?>
+						<div class="column2">						
+							<div class="gutter">
+								<div class="welcome_text">
+									<h4><span><?php echo esc_html(of_get_option('welcome_title')); ?></span> <?php echo esc_html(of_get_option('welcome_title2')); ?></h4>
+									<p><?php echo esc_html(of_get_option('welcome_content')); ?></p>
+									<a class="button" href="<?php echo esc_url(of_get_option('welcome_button_link')); ?>"><?php echo esc_html(of_get_option('welcome_button_text')); ?></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php } ?>
+			</div> 
+
 			<div id="services-section" class="services_block">				
 				<div class="container">
 					<div class="gutter">
@@ -109,55 +161,26 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			<div id="welcome-section" class="welcome_block">
-			    <?php if ( of_get_option('blue_title') ) { ?>
-				<div class="advertisement_block">
-					<div class="container">
-						<div class="gutter">
-							<div class="advertisement">
-								<table>
-									<tbody>
-										<tr>
-											<td class="tdw1">
-												<p class="adv_title"><?php echo esc_html(of_get_option('blue_title')); ?></p>
-											</td>
-											<td class="tdw2">
-												<p><?php echo esc_html(of_get_option('blue_content')); ?></p>
-											</td>
-											<td class="tdw3">
-												<a class="adv_button" href="<?php echo esc_url(of_get_option('blue_button_link')); ?>"><?php echo esc_html(of_get_option('blue_button_text')); ?></a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+			
+			
+			<div class="portfolio_block">
+				<div class="container flexbox-glallery-container">
+					<!-- <div class="gutter" id="flexbox-gallery-gutter"> -->
+						<div class="flexbox-gallery">
+							<div class="img_box bw"><img src="https://unsplash.it/800/520?image=828" alt></div>
+							<div class="img_box"><img src="https://unsplash.it/800/520?image=580" alt></div>
+							<div class="img_box bw"><img src="https://unsplash.it/800/520?image=881" alt></div>
+							<div class="img_box"><img src="https://unsplash.it/800/520?image=767" alt></div>
+							<div class="img_box bw"><img src="https://unsplash.it/800/520?image=296" alt></div>
+							<div class="img_box"><img src="https://unsplash.it/800/520?image=168" alt></div>
+							<div class="img_box"><img src="https://unsplash.it/800/520?image=881" alt></div>
+							<div class="img_box"><img src="https://unsplash.it/800/520?image=881" alt></div>
 						</div>
-					</div>
+					<!-- </div> -->
 				</div>
-				<?php } ?>
-				<?php if ( of_get_option('welcome_title') ) { ?>
-				<div class="container">
-					<div class="columnwrapp clearfix">
-					    <?php if ( of_get_option('welcome_image') ) { ?>
-						<div class="column2">						
-							<div class="gutter">
-								<img class="fullwidth" src="<?php echo esc_url(of_get_option('welcome_image')); ?>" alt="" />
-							</div>
-						</div>
-						<?php } ?>
-						<div class="column2">						
-							<div class="gutter">
-								<div class="welcome_text">
-									<h4><span><?php echo esc_html(of_get_option('welcome_title')); ?></span> <?php echo esc_html(of_get_option('welcome_title2')); ?></h4>
-									<p><?php echo esc_html(of_get_option('welcome_content')); ?></p>
-									<a class="button" href="<?php echo esc_url(of_get_option('welcome_button_link')); ?>"><?php echo esc_html(of_get_option('welcome_button_text')); ?></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<?php } ?>
-			</div> 
+			</div>
+			
+
 			<?php if ( of_get_option('title_area_2') ) { ?>
 			<div class="portfolio_block">
 				<div class="container">
@@ -204,13 +227,16 @@ get_header(); ?>
 									<?php } ?>
 									 <?php if ( of_get_option('box_3_text') ) { ?><a class="btn" href="<?php echo esc_url(of_get_option('box_3_link')); ?>"><?php echo esc_html(of_get_option('box_3_text')); ?></a><?php } ?>
 								</div>
-							</li>
+							</li>							
 						</ul>
 						<div class="clear"></div>
 					</div>
 				</div>
 			</div>
 			<?php } ?>
+			
+
+	
 			<?php if ( of_get_option('testimonial_box_text') ) { ?>
 			<div class="testimonial_block">
 				<div class="container">

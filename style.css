@@ -177,3 +177,41 @@ form.search_form {
 .bw:hover {
   -webkit-filter: grayscale(100%);
 }
+
+
+/** Slick Slider **/
+
+.my-portfolio-section {
+  background-color: gray;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 40px 0;
+}
+.my-portfolio-slider {
+  max-width: 1200px;
+  border: 5px solid black;
+  display: flex;
+  flex-flow: row wrap;
+}
+.my-portfolio-slider {
+  flex: 1 1 0;
+  background-color: whitesmoke;
+}
+
+.slick-slider {
+  margin-bottom: 0px;
+}
+
+.inner {
+  padding: 6px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+img:hover {
+  opacity: 0.9;
+}

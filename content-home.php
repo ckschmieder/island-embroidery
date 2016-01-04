@@ -182,12 +182,33 @@ get_header(); ?>
 			
 
 			<?php if ( of_get_option('title_area_2') ) { ?>
+
+			<div class="my-portfolio-section">
+				<div class="container">
+
+				<div class="gallery gallery-responsive my-portfolio-slider">
+				   	<div class="inner"><img src="https://unsplash.it/350/250?image=768"></div>
+				    <div class="inner"><img src="https://unsplash.it/350/250?image=757"></div>
+				    <div class="inner"><img src="https://unsplash.it/350/250?image=763"></div>
+				    <div class="inner"><img src="https://unsplash.it/350/250?image=764"></div>
+				    <div class="inner"><img src="https://unsplash.it/350/250?image=761"></div>
+				    <div class="inner"><img src="https://unsplash.it/350/250?image=764"></div>
+				    <div class="inner"><img src="https://unsplash.it/350/250?image=761"></div>
+				    <div class="inner"><img src="https://unsplash.it/350/250?image=769"></div>
+				 </div>
+
+				 </div>
+
+			 </div>
+			
+
+
 			<div class="portfolio_block">
 				<div class="container">
 					<div class="gutter">
 						<h1><span><?php echo esc_html(of_get_option('title_area_2')); ?></span></h1>
 					</div>
-					<div class="portfolio_slider">
+					<div class="portfolio_slider gallery gallery-responsive">
 						<ul>
 							<li>
 								<div class="gutter">
@@ -227,7 +248,10 @@ get_header(); ?>
 									<?php } ?>
 									 <?php if ( of_get_option('box_3_text') ) { ?><a class="btn" href="<?php echo esc_url(of_get_option('box_3_link')); ?>"><?php echo esc_html(of_get_option('box_3_text')); ?></a><?php } ?>
 								</div>
-							</li>							
+							</li>
+
+							
+
 						</ul>
 						<div class="clear"></div>
 					</div>

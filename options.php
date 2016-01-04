@@ -331,7 +331,67 @@ function optionsframework_options() {
 		'name' => __('Box 3  Text', 'options_framework_theme'),
 		'desc' => __('', 'options_framework_theme'),
 		'id' => 'box_3_text',
+		'type' => 'text');
+
+	$options[] = array(
+		'name' => __('Box 3  Link', 'options_framework_theme'),
+		'desc' => __('', 'options_framework_theme'),
+		'id' => 'box_3_link',
+		'type' => 'text');
+
+	$options[] = array(
+		'name' => __('Box 4a Image', 'options_framework_theme'),
+		'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
+		'id' => 'box_4a_image',
+		'type' => 'upload');
+		
+	$options[] = array(
+		'name' => __('Box 4a  Text', 'options_framework_theme'),
+		'desc' => __('', 'options_framework_theme'),
+		'id' => 'box_4a_text',
+		'type' => 'text');
+		
+	$options[] = array(
+		'name' => __('Box 4a  Link', 'options_framework_theme'),
+		'desc' => __('', 'options_framework_theme'),
+		'id' => 'box_4a_link',
+		'type' => 'text');
+
+	$options[] = array(
+		'name' => __('Box 5 Image', 'options_framework_theme'),
+		'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
+		'id' => 'box_5_image',
+		'type' => 'upload');
+		
+	$options[] = array(
+		'name' => __('Box 5  Text', 'options_framework_theme'),
+		'desc' => __('', 'options_framework_theme'),
+		'id' => 'box_5_text',
+		'type' => 'text');
+		
+	$options[] = array(
+		'name' => __('Box 5  Link', 'options_framework_theme'),
+		'desc' => __('', 'options_framework_theme'),
+		'id' => 'box_5_link',
 		'type' => 'text');	
+
+	$options[] = array(
+		'name' => __('Box 6 Image', 'options_framework_theme'),
+		'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
+		'id' => 'box_6_image',
+		'type' => 'upload');
+		
+	$options[] = array(
+		'name' => __('Box 6  Text', 'options_framework_theme'),
+		'desc' => __('', 'options_framework_theme'),
+		'id' => 'box_6_text',
+		'type' => 'text');
+		
+	$options[] = array(
+		'name' => __('Box 6  Link', 'options_framework_theme'),
+		'desc' => __('', 'options_framework_theme'),
+		'id' => 'box_6_link',
+		'type' => 'text');
 		
 	$options[] = array(
 		'name' => __('Box 4  Link', 'options_framework_theme'),

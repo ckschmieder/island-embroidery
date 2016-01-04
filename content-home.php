@@ -11,23 +11,23 @@ get_header(); ?>
 					<div class="gutter clearfix">
 						<ul class="slides">
 							<li>
-								<img src="http://chris.matgargano.com/wp-content/uploads/2015/08/Custom-Apparel-Header-e1442893477560.jpg" />
+								<img src="http://islandembroidery.ckschmieder.com/wp-content/uploads/2015/08/Custom-Apparel-Header-e1442893477560.jpg" />
 								<p class="flex-caption"><!-- Caption goes here --></p>
 							</li>							
 							<li>
-								<img src="http://chris.matgargano.com/wp-content/uploads/2015/09/Custom-apparel_1000_330.jpg" />
+								<img src="http://islandembroidery.ckschmieder.com/wp-content/uploads/2015/09/Custom-apparel_1000_330.jpg" />
 								<p class="flex-caption"><!-- Caption goes here --></p>
 							</li>
 							<li>
-								<img src="http://chris.matgargano.com/wp-content/uploads/2015/09/IE_HomeImage1_1000_330.jpg" />
+								<img src="http://islandembroidery.ckschmieder.com/wp-content/uploads/2015/09/IE_HomeImage1_1000_330.jpg" />
 								<p class="flex-caption"><!-- Caption goes here --></p>
 							</li>
 							<li>
-								<img src="http://chris.matgargano.com/wp-content/uploads/2015/09/Promotional_Items_1_1000_330.jpg" />
+								<img src="http://islandembroidery.ckschmieder.com/wp-content/uploads/2015/09/Promotional_Items_1_1000_330.jpg" />
 								<p class="flex-caption"><!-- Caption goes here --></p>
 							</li>
 							<li>
-								<img src="http://chris.matgargano.com/wp-content/uploads/2015/09/shirt-spread_1000_330.jpg" />
+								<img src="http://islandembroidery.ckschmieder.com/wp-content/uploads/2015/09/shirt-spread_1000_330.jpg" />
 								<p class="flex-caption"><!-- Caption goes here --></p>
 							</li>
 						</ul>
@@ -99,7 +99,7 @@ get_header(); ?>
 				<?php } ?>
 			</div> 
 
-			<div id="services-section" class="services_block">				
+			<div id="services-section" class="services_block"><!-- services-section services_block  -->				
 				<div class="container">
 					<div class="gutter">
 						<?php if ( of_get_option('top_title') ) { ?>
@@ -156,16 +156,16 @@ get_header(); ?>
 								</li>
 							</ul>
 							<div class="clear"></div>
-						</div>
+						</div><!-- .services_slider -->
 						<?php } ?>
-					</div>
-				</div>
-			</div>
+					</div><!-- .gutter -->
+				</div><!-- .container -->
+			</div><!-- #services-section .services_block  -->
 			
 			
-			<div class="portfolio_block">
+			<!-- <div class="portfolio_block">
 				<div class="container flexbox-glallery-container">
-					<!-- <div class="gutter" id="flexbox-gallery-gutter"> -->
+					
 						<div class="flexbox-gallery">
 							<div class="img_box bw"><img src="https://unsplash.it/800/520?image=828" alt></div>
 							<div class="img_box"><img src="https://unsplash.it/800/520?image=580" alt></div>
@@ -176,9 +176,9 @@ get_header(); ?>
 							<div class="img_box"><img src="https://unsplash.it/800/520?image=881" alt></div>
 							<div class="img_box"><img src="https://unsplash.it/800/520?image=881" alt></div>
 						</div>
-					<!-- </div> -->
+					
 				</div>
-			</div>
+			</div> -->
 			
 
 			<?php if ( of_get_option('title_area_2') ) { ?>
@@ -187,14 +187,24 @@ get_header(); ?>
 				<div class="container">
 
 				<div class="gallery gallery-responsive my-portfolio-slider">
-				   	<div class="inner"><img src="https://unsplash.it/350/250?image=768"></div>
-				    <div class="inner"><img src="https://unsplash.it/350/250?image=757"></div>
-				    <div class="inner"><img src="https://unsplash.it/350/250?image=763"></div>
-				    <div class="inner"><img src="https://unsplash.it/350/250?image=764"></div>
-				    <div class="inner"><img src="https://unsplash.it/350/250?image=761"></div>
-				    <div class="inner"><img src="https://unsplash.it/350/250?image=764"></div>
-				    <div class="inner"><img src="https://unsplash.it/350/250?image=761"></div>
-				    <div class="inner"><img src="https://unsplash.it/350/250?image=769"></div>
+				   <?php if ( of_get_option('box_1_image') ) { ?>
+				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_1_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_1_image')); ?>"><div class="overlay"></div></a></div>
+				   <?php } ?>
+				   <?php if ( of_get_option('box_2_image') ) { ?>
+				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_2_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_2_image')); ?>"><div class="overlay"></div></a></div>
+				   <?php } ?>
+				   <?php if ( of_get_option('box_3_image') ) { ?>
+				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_3_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_3_image')); ?>"><div class="overlay"></div></a></div>
+				   <?php } ?>
+				   <?php if ( of_get_option('box_4a_image') ) { ?>
+				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_4a_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_4a_image')); ?>"><div class="overlay"></div></a></div>
+				   <?php } ?>
+				   <?php if ( of_get_option('box_5_image') ) { ?>
+				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_5_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_5_image')); ?>"><div class="overlay"></div></a></div>
+				   <?php } ?>
+				   <?php if ( of_get_option('box_6_image') ) { ?>
+				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_6_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_6_image')); ?>"><div class="overlay"></div></a></div>
+				   <?php } ?>				    
 				 </div>
 
 				 </div>
@@ -254,9 +264,9 @@ get_header(); ?>
 
 						</ul>
 						<div class="clear"></div>
-					</div>
-				</div>
-			</div>
+					</div><!-- .gutter -->
+				</div><!-- .container -->
+			</div><!-- .portfolio_block -->
 			<?php } ?>
 			
 

@@ -182,21 +182,15 @@ form.search_form {
 /** Slick Slider **/
 
 .my-portfolio-section {
-  background-color: gray;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  padding: 40px 0;
+  /*background-color: lightgray;*/  
+  
+  /*padding: 40px 0;*/
 }
-.my-portfolio-slider {
-  max-width: 1200px;
-  border: 5px solid black;
-  display: flex;
-  flex-flow: row wrap;
+.my-portfolio-slider {  
+  border-top: 3px 0 solid black;
+  border-bottom: 3px 0 solid black;
 }
-.my-portfolio-slider {
-  flex: 1 1 0;
+.my-portfolio-slider {  
   background-color: whitesmoke;
 }
 
@@ -214,4 +208,22 @@ img {
 }
 img:hover {
   opacity: 0.9;
+}
+
+
+/*****************
+Flex Slider
+******************/
+
+/*****************
+Welcome Section
+******************/
+
+
+.adv_title {
+    font-size: 1.2rem;
+}
+
+.advertisement table td.tdw1 {
+    width: 59%;
 }

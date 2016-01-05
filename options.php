@@ -37,379 +37,409 @@ function optionsframework_options() {
 		'name' => __('General Settings', 'options_framework_theme'),
 		'type' => 'heading');
 
-	$options[] = array(
-		'name' => __('Header Logo Text', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'header_logo_text1',
-		'std' => '',
-		'type' => 'text');	
+			$options[] = array(
+				'name' => __('Header Logo Text', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'header_logo_text1',
+				'std' => '',
+				'type' => 'text');	
 
-	$options[] = array(
-		'name' => __('Header Logo Text 2', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'header_logo_text2',
-		'std' => '',
-		'type' => 'text');			
-		
-	$options[] = array(
-		'name' => __('Header Logo Image', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'logo_image',
-		'type' => 'upload');
-		
-	$options[] = array(
-		'name' => __('Fav Icon URL', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'fav_icon',
-		'type' => 'upload');
+			$options[] = array(
+				'name' => __('Header Logo Text 2', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'header_logo_text2',
+				'std' => '',
+				'type' => 'text');			
+				
+			$options[] = array(
+				'name' => __('Header Logo Image', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'logo_image',
+				'type' => 'upload');
+				
+			$options[] = array(
+				'name' => __('Fav Icon URL', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'fav_icon',
+				'type' => 'upload');
 
-	$options[] = array(
-		'name' => __('Web Clip Icon URL', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'web_clip',
-		'type' => 'upload');
+			$options[] = array(
+				'name' => __('Web Clip Icon URL', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'web_clip',
+				'type' => 'upload');
 
-	$options[] = array(
-		'name' => __('Header Phone', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'header_phone',
-		'std' => '',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Header Email', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'header_email',
-		'std' => '',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Footer copyright text left', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'footer_text_left',
-		'std' => 'Copyright &copy; '.$set_year.' '.get_bloginfo('name'),
-		'type' => 'text');
-			
-	$options[] = array(
-		'name' => __('Enter your custom CSS styles.', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'custom_css_styles',
-		'std' => '',
-		'type' => 'textarea');		
+			$options[] = array(
+				'name' => __('Header Phone', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'header_phone',
+				'std' => '',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Header Email', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'header_email',
+				'std' => '',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Footer copyright text left', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'footer_text_left',
+				'std' => 'Copyright &copy; '.$set_year.' '.get_bloginfo('name'),
+				'type' => 'text');
+					
+			$options[] = array(
+				'name' => __('Enter your custom CSS styles.', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'custom_css_styles',
+				'std' => '',
+				'type' => 'textarea');		
 
+	/* Home Page */
 	$options[] = array(
 		'name' => __('Home Page', 'options_framework_theme'),
 		'type' => 'heading');
 		
-	$options[] = array(
-		'name' => __('Top Image', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 1000 X 320', 'options_framework_theme'),
-		'id' => 'top_image',
-		'type' => 'upload');
-		
-	$options[] = array(
-		'name' => __('Top Title', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_title',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Top Box 1 Icon', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 140 X 140', 'options_framework_theme'),
-		'id' => 'top_box_1_icon',
-		'type' => 'upload');		
-		
-	$options[] = array(
-		'name' => __('Top Box 1 Title', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_1_title',
-		'type' => 'text');	
+			$options[] = array(
+				'name' => __('Top Image', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 1000 X 320', 'options_framework_theme'),
+				'id' => 'top_image',
+				'type' => 'upload');
+				
+			$options[] = array(
+				'name' => __('Top Title', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_title',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Top Box 1 Icon', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 140 X 140', 'options_framework_theme'),
+				'id' => 'top_box_1_icon',
+				'type' => 'upload');		
+				
+			$options[] = array(
+				'name' => __('Top Box 1 Title', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_1_title',
+				'type' => 'text');	
 
-	$options[] = array(
-		'name' => __('Top Box 1 Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_1_link',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Top Box 1 Content', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_1_content',
-		'type' => 'textarea');
-		
-	$options[] = array(
-		'name' => __('Top Box 2 Icon', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 140 X 140', 'options_framework_theme'),
-		'id' => 'top_box_2_icon',
-		'type' => 'upload');			
-		
-	$options[] = array(
-		'name' => __('Top Box 2 Title', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_2_title',
-		'type' => 'text');	
+			$options[] = array(
+				'name' => __('Top Box 1 Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_1_link',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Top Box 1 Content', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_1_content',
+				'type' => 'textarea');
+				
+			$options[] = array(
+				'name' => __('Top Box 2 Icon', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 140 X 140', 'options_framework_theme'),
+				'id' => 'top_box_2_icon',
+				'type' => 'upload');			
+				
+			$options[] = array(
+				'name' => __('Top Box 2 Title', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_2_title',
+				'type' => 'text');	
 
-	$options[] = array(
-		'name' => __('Top Box 2 Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_2_link',
-		'type' => 'text');			
-		
-	$options[] = array(
-		'name' => __('Top Box 2 Content', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_2_content',
-		'type' => 'textarea');	
+			$options[] = array(
+				'name' => __('Top Box 2 Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_2_link',
+				'type' => 'text');			
+				
+			$options[] = array(
+				'name' => __('Top Box 2 Content', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_2_content',
+				'type' => 'textarea');	
 
-	$options[] = array(
-		'name' => __('Top Box 3 Icon', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 140 X 140', 'options_framework_theme'),
-		'id' => 'top_box_3_icon',
-		'type' => 'upload');				
-		
-	$options[] = array(
-		'name' => __('Top Box 3 Title', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_3_title',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Top Box 3 Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_3_link',
-		'type' => 'text');		
-		
-	$options[] = array(
-		'name' => __('Top Box 3 Content', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_3_content',
-		'type' => 'textarea');		
+			$options[] = array(
+				'name' => __('Top Box 3 Icon', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 140 X 140', 'options_framework_theme'),
+				'id' => 'top_box_3_icon',
+				'type' => 'upload');				
+				
+			$options[] = array(
+				'name' => __('Top Box 3 Title', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_3_title',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Top Box 3 Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_3_link',
+				'type' => 'text');		
+				
+			$options[] = array(
+				'name' => __('Top Box 3 Content', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_3_content',
+				'type' => 'textarea');		
 
-	$options[] = array(
-		'name' => __('Top Box 4 Icon', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 140 X 140', 'options_framework_theme'),
-		'id' => 'top_box_4_icon',
-		'type' => 'upload');				
-		
-	$options[] = array(
-		'name' => __('Top Box 4 Title', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_4_title',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Top Box 4 Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_4_link',
-		'type' => 'text');		
-		
-	$options[] = array(
-		'name' => __('Top Box 4 Content', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'top_box_4_content',
-		'type' => 'textarea');			
-		
-	$options[] = array(
-		'name' => __('Blue Title', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'blue_title',
-		'std' => '',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Blue Content', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'blue_content',
-		'std' => '',
-		'type' => 'textarea');	
-		
-	$options[] = array(
-		'name' => __('Blue Button Text', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'blue_button_text',
-		'std' => 'Click Here',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Blue Button Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'blue_button_link',
-		'std' => '',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Welcome Image', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'welcome_image',
-		'type' => 'upload');	
-		
-	$options[] = array(
-		'name' => __('Welcome Title', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'welcome_title',
-		'std' => '',
-		'type' => 'text');			
+			$options[] = array(
+				'name' => __('Top Box 4 Icon', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 140 X 140', 'options_framework_theme'),
+				'id' => 'top_box_4_icon',
+				'type' => 'upload');				
+				
+			$options[] = array(
+				'name' => __('Top Box 4 Title', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_4_title',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Top Box 4 Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_4_link',
+				'type' => 'text');		
+				
+			$options[] = array(
+				'name' => __('Top Box 4 Content', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'top_box_4_content',
+				'type' => 'textarea');			
+				
+			$options[] = array(
+				'name' => __('Blue Title', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'blue_title',
+				'std' => '',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Blue Content', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'blue_content',
+				'std' => '',
+				'type' => 'textarea');	
+				
+			$options[] = array(
+				'name' => __('Blue Button Text', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'blue_button_text',
+				'std' => 'Click Here',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Blue Button Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'blue_button_link',
+				'std' => '',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Welcome Image', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'welcome_image',
+				'type' => 'upload');	
+				
+			$options[] = array(
+				'name' => __('Welcome Title', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'welcome_title',
+				'std' => '',
+				'type' => 'text');			
 
-	$options[] = array(
-		'name' => __('Welcome Title 2', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'welcome_title2',
-		'std' => '',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Welcome Content', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'welcome_content',
-		'std' => '',
-		'type' => 'textarea');			
+			$options[] = array(
+				'name' => __('Welcome Title 2', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'welcome_title2',
+				'std' => '',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Welcome Content', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'welcome_content',
+				'std' => '',
+				'type' => 'textarea');			
 
-	$options[] = array(
-		'name' => __('Welcome Button Text', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'welcome_button_text',
-		'std' => 'Read More',
-		'type' => 'text');	
+			$options[] = array(
+				'name' => __('Welcome Button Text', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'welcome_button_text',
+				'std' => 'Read More',
+				'type' => 'text');	
 
-	$options[] = array(
-		'name' => __('Welcome Button Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'welcome_button_link',
-		'std' => '',
-		'type' => 'text');			
-		
-	$options[] = array(
-		'name' => __('Title Area 2', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'title_area_2',
-		'std' => 'Portfolio',
-		'type' => 'text');			
-		
-	$options[] = array(
-		'name' => __('Box 1 Image', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
-		'id' => 'box_1_image',
-		'type' => 'upload');
-		
-	$options[] = array(
-		'name' => __('Box 1  Text', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_1_text',
-		'type' => 'text');
-		
-	$options[] = array(
-		'name' => __('Box 1  Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_1_link',
-		'type' => 'text');
-		
-	$options[] = array(
-		'name' => __('Box 2 Image', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
-		'id' => 'box_2_image',
-		'type' => 'upload');
-		
-	$options[] = array(
-		'name' => __('Box 2  Text', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_2_text',
-		'type' => 'text');	
-		
-	$options[] = array(
-		'name' => __('Box 2  Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_2_link',
-		'type' => 'text');		
-		
-	$options[] = array(
-		'name' => __('Box 3 Image', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
-		'id' => 'box_3_image',
-		'type' => 'upload');
-		
-	$options[] = array(
-		'name' => __('Box 3  Text', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_3_text',
-		'type' => 'text');
+			$options[] = array(
+				'name' => __('Welcome Button Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'welcome_button_link',
+				'std' => '',
+				'type' => 'text');			
+				
+			$options[] = array(
+				'name' => __('Title Area 2', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'title_area_2',
+				'std' => 'Portfolio',
+				'type' => 'text');			
+				
+			$options[] = array(
+				'name' => __('Box 1 Image', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
+				'id' => 'box_1_image',
+				'type' => 'upload');
+				
+			$options[] = array(
+				'name' => __('Box 1  Text', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_1_text',
+				'type' => 'text');
+				
+			$options[] = array(
+				'name' => __('Box 1  Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_1_link',
+				'type' => 'text');
+				
+			$options[] = array(
+				'name' => __('Box 2 Image', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
+				'id' => 'box_2_image',
+				'type' => 'upload');
+				
+			$options[] = array(
+				'name' => __('Box 2  Text', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_2_text',
+				'type' => 'text');	
+				
+			$options[] = array(
+				'name' => __('Box 2  Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_2_link',
+				'type' => 'text');		
+				
+			$options[] = array(
+				'name' => __('Box 3 Image', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
+				'id' => 'box_3_image',
+				'type' => 'upload');
+				
+			$options[] = array(
+				'name' => __('Box 3  Text', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_3_text',
+				'type' => 'text');
 
-	$options[] = array(
-		'name' => __('Box 3  Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_3_link',
-		'type' => 'text');
+			$options[] = array(
+				'name' => __('Box 3  Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_3_link',
+				'type' => 'text');
 
-	$options[] = array(
-		'name' => __('Box 4a Image', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
-		'id' => 'box_4a_image',
-		'type' => 'upload');
-		
-	$options[] = array(
-		'name' => __('Box 4a  Text', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_4a_text',
-		'type' => 'text');
-		
-	$options[] = array(
-		'name' => __('Box 4a  Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_4a_link',
-		'type' => 'text');
+			$options[] = array(
+				'name' => __('Box 4a Image', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
+				'id' => 'box_4a_image',
+				'type' => 'upload');
+				
+			$options[] = array(
+				'name' => __('Box 4a  Text', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_4a_text',
+				'type' => 'text');
+				
+			$options[] = array(
+				'name' => __('Box 4a  Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_4a_link',
+				'type' => 'text');
 
-	$options[] = array(
-		'name' => __('Box 5 Image', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
-		'id' => 'box_5_image',
-		'type' => 'upload');
-		
-	$options[] = array(
-		'name' => __('Box 5  Text', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_5_text',
-		'type' => 'text');
-		
-	$options[] = array(
-		'name' => __('Box 5  Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_5_link',
-		'type' => 'text');	
+			$options[] = array(
+				'name' => __('Box 5 Image', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
+				'id' => 'box_5_image',
+				'type' => 'upload');
+				
+			$options[] = array(
+				'name' => __('Box 5  Text', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_5_text',
+				'type' => 'text');
+				
+			$options[] = array(
+				'name' => __('Box 5  Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_5_link',
+				'type' => 'text');	
 
-	$options[] = array(
-		'name' => __('Box 6 Image', 'options_framework_theme'),
-		'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
-		'id' => 'box_6_image',
-		'type' => 'upload');
-		
-	$options[] = array(
-		'name' => __('Box 6  Text', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_6_text',
-		'type' => 'text');
-		
-	$options[] = array(
-		'name' => __('Box 6  Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_6_link',
-		'type' => 'text');
-		
-	$options[] = array(
-		'name' => __('Box 4  Link', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'box_4_link',
-		'type' => 'text');		
+			$options[] = array(
+				'name' => __('Box 6 Image', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 303 X 344', 'options_framework_theme'),
+				'id' => 'box_6_image',
+				'type' => 'upload');
+				
+			$options[] = array(
+				'name' => __('Box 6  Text', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_6_text',
+				'type' => 'text');
+				
+			$options[] = array(
+				'name' => __('Box 6  Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_6_link',
+				'type' => 'text');
+				
+			$options[] = array(
+				'name' => __('Box 4  Link', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'box_4_link',
+				'type' => 'text');		
 
+			$options[] = array(
+				'name' => __('Testimonial Box Text', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'testimonial_box_text',
+				'type' => 'textarea');
+				
+			$options[] = array(
+				'name' => __('Testimonial Box Name', 'options_framework_theme'),
+				'desc' => __('', 'options_framework_theme'),
+				'id' => 'testimonial_box_name',
+				'type' => 'text');
+
+	/* Main Slider */
 	$options[] = array(
-		'name' => __('Testimonial Box Text', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'testimonial_box_text',
-		'type' => 'textarea');
-		
-	$options[] = array(
-		'name' => __('Testimonial Box Name', 'options_framework_theme'),
-		'desc' => __('', 'options_framework_theme'),
-		'id' => 'testimonial_box_name',
-		'type' => 'text');
+		'name' => __('Main Slider', 'options_framework_theme'),
+		'type' => 'heading');
+
+			$options[] = array(
+				'name' => __('Main Slider - Image 1', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 1000 X 320', 'options_framework_theme'),
+				'id' => 'main_slider_image_1',
+				'type' => 'upload');
+
+			$options[] = array(
+				'name' => __('Main Slider - Image 2', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 1000 X 320', 'options_framework_theme'),
+				'id' => 'main_slider_image_2',
+				'type' => 'upload');
+
+			$options[] = array(
+				'name' => __('Main Slider - Image 3', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 1000 X 320', 'options_framework_theme'),
+				'id' => 'main_slider_image_3',
+				'type' => 'upload');
+
+			$options[] = array(
+				'name' => __('Main Slider - Image 4', 'options_framework_theme'),
+				'desc' => __('Recommended image sizes 1000 X 320', 'options_framework_theme'),
+				'id' => 'main_slider_image_4',
+				'type' => 'upload');
 		
 	return $options;
 }

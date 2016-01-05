@@ -179,50 +179,80 @@ form.search_form {
 }
 
 
-/** Slick Slider **/
+/*****************
+Slick Slider
+******************/
 
-.my-portfolio-section {
-  /*background-color: lightgray;*/  
-  
-  /*padding: 40px 0;*/
-}
-.my-portfolio-slider {  
-  border-top: 3px 0 solid black;
-  border-bottom: 3px 0 solid black;
-}
-.my-portfolio-slider {  
-  background-color: whitesmoke;
-}
 
-.slick-slider {
-  margin-bottom: 0px;
-}
+/** Main Slider **/
 
-.inner {
-  padding: 6px;
-}
+  .main-slider {
+    margin: 2px 0px;
+  }
 
-img {
-  width: 100%;
-  height: auto;
-}
-img:hover {
-  opacity: 0.9;
-}
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+/** Gallery Slider **/
+
+  .my-portfolio-section {
+    /*padding: 40px 0;*/
+  }
+  .my-portfolio-slider {  
+    border-top: 3px 0 solid black;
+    border-bottom: 3px 0 solid black;
+  }
+  .my-portfolio-slider {  
+    background-color: whitesmoke;
+  }
+
+  .slick-slider {
+    margin-bottom: 0px;
+  }
+
+  .inner {
+    padding: 6px;
+  }
+
+  .my-portfolio-slider img {
+    width: 100%;
+    height: auto;
+  }
+  .my-portfolio-slider img:hover {
+    opacity: 0.9;
+  }
+
+
 
 
 /*****************
 Flex Slider
 ******************/
 
+
+
 /*****************
 Welcome Section
 ******************/
+
+.welcome_block {
+  margin-top: 5px;
+  padding: 70px 0;
+
+}
+
 
 
 .adv_title {
     font-size: 1.2rem;
 }
+
+.welcome_block .advertisement_block {
+    top: auto;
+}
+
 
 .advertisement table td.tdw1 {
     width: 59%;

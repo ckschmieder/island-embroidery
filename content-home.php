@@ -4,51 +4,68 @@
  * @package Kage 
  */
 get_header(); ?>
-		<div id="content">
-		<!-- Flexslider demo content -->
-			<div class="my-container">
+
+<div id="content">
+	
+	<section id="intro" class="home-section"><!-- #intro -->
+
+		<?php if ( of_get_option('main_slider_image_1') ) { ?>	
+		<div class="container">
+			<div class="main-slider">		
+				<?php if ( of_get_option('main_slider_image_1') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_1')); ?>"></a></div><?php } ?>
+				<?php if ( of_get_option('main_slider_image_2') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_2')); ?>"></a></div><?php } ?>
+				<?php if ( of_get_option('main_slider_image_3') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_3')); ?>"></a></div><?php } ?>
+				<?php if ( of_get_option('main_slider_image_4') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_4')); ?>"></a></div><?php } ?>						    
+			</div><!-- END .main-slider -->
+		</div><!-- .container -->	
+		<?php } ?>
+
+		<!-- Flexslider  -->
+			<!-- <div class="my-container">
 				<div class="flexslider">
 					<div class="gutter clearfix">
 						<ul class="slides">
 							<li>
 								<img src="http://islandembroidery.ckschmieder.com/wp-content/uploads/2015/08/Custom-Apparel-Header-e1442893477560.jpg" />
-								<p class="flex-caption"><!-- Caption goes here --></p>
+								<p class="flex-caption">Caption goes here</p>
 							</li>							
 							<li>
 								<img src="http://islandembroidery.ckschmieder.com/wp-content/uploads/2015/09/Custom-apparel_1000_330.jpg" />
-								<p class="flex-caption"><!-- Caption goes here --></p>
+								<p class="flex-caption">Caption goes here</p>
 							</li>
 							<li>
 								<img src="http://islandembroidery.ckschmieder.com/wp-content/uploads/2015/09/IE_HomeImage1_1000_330.jpg" />
-								<p class="flex-caption"><!-- Caption goes here --></p>
+								<p class="flex-caption">Caption goes here</p>
 							</li>
 							<li>
 								<img src="http://islandembroidery.ckschmieder.com/wp-content/uploads/2015/09/Promotional_Items_1_1000_330.jpg" />
-								<p class="flex-caption"><!-- Caption goes here --></p>
+								<p class="flex-caption">Caption goes here</p>
 							</li>
 							<li>
 								<img src="http://islandembroidery.ckschmieder.com/wp-content/uploads/2015/09/shirt-spread_1000_330.jpg" />
-								<p class="flex-caption"><!-- Caption goes here --></p>
+								<p class="flex-caption">Caption goes here</p>
 							</li>
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div> -->
 				
-		<!-- END Flexslider demo content -->
-		    <?php if ( of_get_option('top_image') ) { ?>
-			<div class="mainslider">
-				<div class="container">
-					<div class="gutter clearfix">
-						<div class="imgbox">
-							<img class="fullwidth" src="<?php echo esc_url(of_get_option('top_image')); ?>" alt="" />
-						</div>
-					</div>
-				</div>	
-			</div>
-			<?php } ?>
-			
+		<!-- END Flexslider -->
 
+	    <?php if ( of_get_option('top_image') ) { ?>
+		<div class="mainslider">
+			<div class="container">
+				<div class="gutter clearfix">
+					<div class="imgbox">
+						<img class="fullwidth" src="<?php echo esc_url(of_get_option('top_image')); ?>" alt="" />
+					</div>
+				</div>
+			</div>	
+		</div>
+		<?php } ?>
+	</section><!-- END Intro -->
+			
+	<section id="welcome" class="home-section">
 			<div id="welcome-section" class="welcome_block">			    
 				<?php if ( of_get_option('welcome_title') ) { ?>
 				<div class="container">
@@ -97,7 +114,8 @@ get_header(); ?>
 					</div>
 				</div>
 				<?php } ?>
-			</div> 
+			</div><!-- .welcome_block -->
+	</section><!-- END #welcome -->
 
 			<div id="services-section" class="services_block"><!-- services-section services_block  -->				
 				<div class="container">
@@ -185,35 +203,36 @@ get_header(); ?>
 
 			<div class="my-portfolio-section">
 				<div class="container">
+					<h1><span><?php echo esc_html(of_get_option('title_area_2')); ?></span></h1>
 
-				<div class="gallery gallery-responsive my-portfolio-slider">
-				   <?php if ( of_get_option('box_1_image') ) { ?>
-				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_1_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_1_image')); ?>"><div class="overlay"></div></a></div>
-				   <?php } ?>
-				   <?php if ( of_get_option('box_2_image') ) { ?>
-				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_2_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_2_image')); ?>"><div class="overlay"></div></a></div>
-				   <?php } ?>
-				   <?php if ( of_get_option('box_3_image') ) { ?>
-				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_3_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_3_image')); ?>"><div class="overlay"></div></a></div>
-				   <?php } ?>
-				   <?php if ( of_get_option('box_4a_image') ) { ?>
-				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_4a_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_4a_image')); ?>"><div class="overlay"></div></a></div>
-				   <?php } ?>
-				   <?php if ( of_get_option('box_5_image') ) { ?>
-				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_5_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_5_image')); ?>"><div class="overlay"></div></a></div>
-				   <?php } ?>
-				   <?php if ( of_get_option('box_6_image') ) { ?>
-				   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_6_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_6_image')); ?>"><div class="overlay"></div></a></div>
-				   <?php } ?>				    
-				 </div>
+					<div class="gallery gallery-responsive my-portfolio-slider">
+					   <?php if ( of_get_option('box_1_image') ) { ?>
+					   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_1_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_1_image')); ?>"><div class="overlay"></div></a></div>
+					   <?php } ?>
+					   <?php if ( of_get_option('box_2_image') ) { ?>
+					   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_2_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_2_image')); ?>"><div class="overlay"></div></a></div>
+					   <?php } ?>
+					   <?php if ( of_get_option('box_3_image') ) { ?>
+					   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_3_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_3_image')); ?>"><div class="overlay"></div></a></div>
+					   <?php } ?>
+					   <?php if ( of_get_option('box_4a_image') ) { ?>
+					   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_4a_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_4a_image')); ?>"><div class="overlay"></div></a></div>
+					   <?php } ?>
+					   <?php if ( of_get_option('box_5_image') ) { ?>
+					   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_5_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_5_image')); ?>"><div class="overlay"></div></a></div>
+					   <?php } ?>
+					   <?php if ( of_get_option('box_6_image') ) { ?>
+					   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_6_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_6_image')); ?>"><div class="overlay"></div></a></div>
+					   <?php } ?>				    
+					 </div>
 
-				 </div>
+				 </div><!-- .container -->
 
-			 </div>
+			 </div><!-- .my-portfolio-section -->
 			
 
 
-			<div class="portfolio_block">
+			<!-- <div class="portfolio_block">
 				<div class="container">
 					<div class="gutter">
 						<h1><span><?php echo esc_html(of_get_option('title_area_2')); ?></span></h1>
@@ -264,9 +283,9 @@ get_header(); ?>
 
 						</ul>
 						<div class="clear"></div>
-					</div><!-- .gutter -->
-				</div><!-- .container -->
-			</div><!-- .portfolio_block -->
+					</div>
+				</div>
+			</div> -->
 			<?php } ?>
 			
 

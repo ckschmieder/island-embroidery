@@ -19,6 +19,22 @@ jQuery(document).ready(function($){
 	/******************
 	Slick Slider
 	*******************/
+
+	/** Main Slider **/
+
+	$('.main-slider').slick({
+		dots: false,
+		arrows: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: false,
+  		autoplaySpeed: 5000,  		
+		
+	});
+
+	/** Gallery Slider **/
 	
 	$('.gallery-responsive').slick({
 		dots: false,
@@ -57,7 +73,7 @@ jQuery(document).ready(function($){
 		    // settings: "unslick"
 		    // instead of a settings object
 		  ]
-		});
+	});
 
 
 	/******************

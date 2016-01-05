@@ -25,12 +25,14 @@ jQuery(document).ready(function($){
 	$('.main-slider').slick({
 		dots: false,
 		arrows: false,
-		infinite: true,
-		speed: 300,
+		infinite: true,		
+		speed: 500,
+  		fade: true,
+  		cssEase: 'linear',
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: false,
-  		autoplaySpeed: 5000,  		
+		autoplay: true,
+  		autoplaySpeed: 5000
 		
 	});
 

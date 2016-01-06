@@ -43,15 +43,15 @@ jQuery(document).ready(function($){
 		arrows: false,
 		infinite: true,
 		speed: 300,
-		slidesToShow: 4,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		autoplay: true,
-  		autoplaySpeed: 3000,  		
+  		autoplaySpeed: 2200,  		
 		responsive: [
 		    {
 		      breakpoint: 1024,
 		      settings: {
-		        slidesToShow: 3,
+		        slidesToShow: 4,
 		        slidesToScroll: 1,
 		        infinite: true,
 		        dots: false
@@ -60,14 +60,14 @@ jQuery(document).ready(function($){
 		    {
 		      breakpoint: 668,
 		      settings: {
-		        slidesToShow: 2,
+		        slidesToShow: 3,
 		        slidesToScroll: 1
 		      }
 		    },
 		    {
 		      breakpoint: 480,
 		      settings: {
-		        slidesToShow: 1,
+		        slidesToShow: 3,
 		        slidesToScroll: 1
 		      }
 		    }
@@ -86,28 +86,39 @@ jQuery(document).ready(function($){
 	$('.image-link').magnificPopup({
 	type: 'image',
 
-	gallery: {
-	// options for gallery
-	enabled: true
-	},
+		gallery: {
+		// options for gallery
+		enabled: true
+		},
 
-	mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+		mainClass: 'mfp-with-zoom', // this class is for CSS animation below
 
-	zoom: {
-	  enabled: true, // By default it's false, so don't forget to enable it
+		zoom: {
+		  enabled: true, // By default it's false, so don't forget to enable it
 
-	  duration: 300, // duration of the effect, in milliseconds
-	  easing: 'ease-in-out', // CSS transition easing function
+		  duration: 300, // duration of the effect, in milliseconds
+		  easing: 'ease-in-out', // CSS transition easing function
 
-	  // The "opener" function should return the element from which popup will be zoomed in
-	  // and to which popup will be scaled down
-	  // By defailt it looks for an image tag:
-	  opener: function(openerElement) {
-	    // openerElement is the element on which popup was initialized, in this case its <a> tag
-	    // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-	    return openerElement.is('img') ? openerElement : openerElement.find('img');
-	  }
-	}
+		  // The "opener" function should return the element from which popup will be zoomed in
+		  // and to which popup will be scaled down
+		  // By defailt it looks for an image tag:
+		  opener: function(openerElement) {
+		    // openerElement is the element on which popup was initialized, in this case its <a> tag
+		    // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+		    return openerElement.is('img') ? openerElement : openerElement.find('img');
+		  }
+		},
+
+		callbacks: {
+		    open: function() {		    	
+		    	$('.gallery-responsive').slick('slickPause'); 
+		    	console.log('Popup is opened');
+		    },
+		    afterClose: function() {		    
+		    	$('.gallery-responsive').slick('slickPlay');
+		    	console.log('Popup is completely closed');
+		    }	    
+	    }
 
 	});
 

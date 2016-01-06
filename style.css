@@ -31,6 +31,23 @@ Updated: 2015-09-17 15:29:34
 
 }
 
+.container {
+    width: auto;
+}
+
+/**************
+Header
+***************/
+
+.logo img {
+  width: auto;
+  max-width: 60vw;
+}
+
+.header_block {
+    padding: 0px;
+    margin: 10px 7px;
+}
 
 h1 {  
 	background-image:url(images/separe_texture.png);
@@ -39,6 +56,11 @@ h1 {
 h1 span {
   font-family: 'embroidery';
   text-transform: lowercase;
+}
+
+.menucontainer {
+  padding: 0;
+  margin-top: 10px;
 }
 
 .menutop {
@@ -70,12 +92,18 @@ form.search_form {
 }
 
 @media only screen and (min-width:1153px) {
-  
+  .header_block {
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
   .mainslider{
       margin-top: 25px;
   }
 }
 
+@media only screen and (min-width:769px) {
+  
+}
 
 @media only screen and (min-width:769px) and (max-width:1152px) {
     .mainslider {
@@ -123,47 +151,47 @@ form.search_form {
 
 /*  Flexbox Stuff  */
 
-.flexbox-gallery-container { 
-	margin: 0 .5vw auto;
-	max-width: 1014px;
-}
+    .flexbox-gallery-container { 
+    	margin: 0 .5vw auto;
+    	max-width: 1014px;
+    }
 
-.flexbox-gallery { 
-  padding: .5vw;
-  font-size: 0;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap; 
-  flex-flow: row wrap; 
-  display: -webkit-box;
-  display: flex;
-}
+    .flexbox-gallery { 
+      padding: .5vw;
+      font-size: 0;
+      display: -ms-flexbox;
+      -ms-flex-wrap: wrap;
+      -ms-flex-direction: column;
+      -webkit-flex-flow: row wrap; 
+      flex-flow: row wrap; 
+      display: -webkit-box;
+      display: flex;
+    }
 
-.flexbox-gallery div { 
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
-  flex: auto; 
-  width: 200px; 
-  margin: .5vw; 
-}
+    .flexbox-gallery div { 
+      -webkit-box-flex: auto;
+      -ms-flex: auto;
+      flex: auto; 
+      width: 200px; 
+      margin: .5vw; 
+    }
 
-.flexbox-gallery div img { 
-  width: 100%; 
-  height: auto; 
-}
+    .flexbox-gallery div img { 
+      width: 100%; 
+      height: auto; 
+    }
 
-#flexbox-gallery-gutter {
-	margin-left: calc(7px - .5vw);
-	margin-right: calc(7px - .5vw);
-}
+    #flexbox-gallery-gutter {
+    	margin-left: calc(7px - .5vw);
+    	margin-right: calc(7px - .5vw);
+    }
 
-@media screen and (max-width: 400px) {
-  .flexbox-gallery div { margin: 2px 0; }
-  .flexbox-gallery { padding: 0; }
-  .flexbox-gallery-container { margin-bottom: 20px; }
-  .flexbox-glallery-container .img_box { margin-bottom:20px }
-}
+    @media screen and (max-width: 400px) {
+      .flexbox-gallery div { margin: 2px 0; }
+      .flexbox-gallery { padding: 0; }
+      .flexbox-gallery-container { margin-bottom: 20px; }
+      .flexbox-glallery-container .img_box { margin-bottom:20px }
+    }
 
 /*B&W*/
 .bw {
@@ -178,6 +206,30 @@ form.search_form {
   -webkit-filter: grayscale(100%);
 }
 
+.service_icon {
+  max-width: 210px;
+    margin: 0 auto;
+    float: none;
+}
+
+.service_icon img {
+border-radius: 210px;
+    border: 5px solid #fff;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.service_title {
+  text-align: center;
+    font-size: 1.6rem;
+    display: block;
+    margin: 1rem 0;
+}
+
+.services_slider .service_item .service_icon {
+    margin: auto;
+}
 
 /*****************
 Slick Slider
@@ -197,8 +249,13 @@ Slick Slider
 
 /** Gallery Slider **/
 
-  .my-portfolio-section {
+  .my-portfolio-section h1 {
     /*padding: 40px 0;*/
+    margin-bottom: 15px;
+  }
+
+  .my-portfolio-section {
+    margin: 20px 0;
   }
   .my-portfolio-slider {  
     border-top: 3px 0 solid black;
@@ -239,8 +296,11 @@ Welcome Section
 
 .welcome_block {
   margin-top: 5px;
-  padding: 70px 0;
+  padding: 30px 0;
+}
 
+@media only screen and (min-width:769px) {
+  .welcome_block { padding: 70px 0;}
 }
 
 
@@ -259,7 +319,17 @@ Welcome Section
 }
 
 
-/** Contact Form  **/
+/*****************
+Footer Section
+******************/
+
+.footer_block {
+  text-align: center;
+}
+    
+/*****************
+Contact Form
+******************/
 
   .contact-text{
     margin:45px auto;
@@ -383,3 +453,22 @@ input {
     position: relative;
     z-index: 9999;
 }
+
+
+/*****************************
+Flexbox Ordering for Home Page
+*******************************/
+
+#main-wrap { 
+  display: flex;
+  flex-direction: column;
+}
+
+#main-slider {order: 0;}
+#welcome {order: 1;}
+#services {order: 3;}
+#portfolio-slider {order: 2;}
+#old-portfolio-block {order: 4;}
+#testimonials {order: 5;}
+
+

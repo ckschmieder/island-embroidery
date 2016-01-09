@@ -454,6 +454,40 @@ input {
     z-index: 9999;
 }
 
+/*****************************
+My Footer
+*******************************/
+
+.footer-wrap {
+  display: flex;
+  flex-flow: column nowrap;  
+}
+
+.footer-block {
+  padding: 20px;
+  flex: 1;
+}
+
+ul.social {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+
+@media screen and (min-width: 769px) {
+
+  .footer-wrap {
+    display: flex;
+    flex-flow: row nowrap;  
+  }
+
+
+
+}
+
+
 
 /*****************************
 Flexbox Ordering for Home Page

@@ -32,35 +32,67 @@ Updated: 2015-09-17 15:29:34
 }
 
 .container {
-    width: auto;
+  margin: 0 auto;
+  max-width: 1330px;
 }
 
 /**************
 Header
 ***************/
 
-.logo img {
-  width: auto;
-  max-width: 60vw;
+header a.logo {
+  width: 277px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
-.header_block {
+.logo img {
+  width: 100%;
+}
+
+/*.header_block {
     padding: 0px;
     margin: 10px 7px;
+}*/
+
+.title-area {
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    display: block
 }
 
-h1 {  
-	background-image:url(images/separe_texture.png);
+@media only screen and (min-width: 769px) {
+  .title-area {
+      margin: 15px auto;
+      float: none;
+      width: 280px;
+  }
 }
 
-h1 span {
-  font-family: 'embroidery';
-  text-transform: lowercase;
+@media only screen and (min-width: 992px) {
+  .title-area {
+      margin: 15px auto;
+      float: none;
+  }
 }
+
+@media only screen and (min-width: 1140px) {
+  .title-area {
+      margin: 15px auto;
+      float: none;
+  }
+}
+
 
 .menucontainer {
-  padding: 0;
-  margin-top: 10px;
+  padding-top: 0;  
+}
+
+.menuicon {
+  line-height: 1;
+  padding: 5px 50px 5px 20px;
 }
 
 .menutop {
@@ -83,9 +115,25 @@ form.search_form {
 
 
 /*#### Media Queries ####*/
+@media only screen and (min-width:769px) {
+
+  .wrap {
+    max-width: 769px;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
+@media only screen and (min-width:960px) {
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+
+}
 
 @media only screen and (min-width:1200px) {
-  
   .container{
     width:1170px;
   }
@@ -101,21 +149,28 @@ form.search_form {
   }
 }
 
-@media only screen and (min-width:769px) {
+
+
+  .menucontainer {
+    float: none;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
   
 }
 
 @media only screen and (min-width:769px) and (max-width:1152px) {
+    .wrap {
+
+    }
     .mainslider {
-    	 margin-top: 25px;
+    	 margin-top: 25px;       
     }
 }
 
 
-@media only screen and (max-width:768px) {
-  	.container {
-  		  margin: 0 3px;
-  	}
 
     #text-4 div {
         display: flex;
@@ -129,6 +184,14 @@ form.search_form {
     align-items: center;
   }
 
+
+h1 {  
+  background-image:url(images/separe_texture.png);
+}
+
+h1 span {
+  font-family: 'embroidery';
+  text-transform: lowercase;
 }
 
 .container {

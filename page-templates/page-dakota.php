@@ -24,6 +24,7 @@
 							<article class="singlepost clearfix">
 												
 								<?php the_content(); ?>
+								<iframe src="http://www.dakotacollectibles.com/dc_catalog/default.aspx" width="100%" height="1800" frameborder="0"> </iframe>
 								
 								<div class="clear"></div>
 								<hr class="space25">

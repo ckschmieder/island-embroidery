@@ -7,7 +7,7 @@
  */
 ?>
 		<footer id="footer" class="clearfix">
-			<div class="footer_block">
+			<div class="footer_block">			
 				<div class="container columnwrapp clearfix">
 					<div class="column3">
 						<div class="gutter">
@@ -92,8 +92,7 @@
 		                </ul>
 		            </div>
 	           </div>
-	        </section>
-
+	        </section>	        
 		</footer>
 	</div>
 <?php wp_footer(); ?>		

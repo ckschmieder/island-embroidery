@@ -34,6 +34,16 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_child_css', 999 );
 
 // END ENQUEUE PARENT ACTION
 
+function twentyfifteen_setup() {
+
+    // This theme uses wp_nav_menu() in two locations.
+    register_nav_menus( array(
+        'primary' => __( 'Primary Menu',      'twentyfifteen' ),
+        'social'  => __( 'Social Links Menu', 'twentyfifteen' ),
+    ) );
+
+}
+
 
 // FLEXSLIDER
 
@@ -80,3 +90,10 @@ function my_scripts() {
         wp_enqueue_script( 'my-script', get_stylesheet_directory_uri() . '/js/my-script.js', array( 'jquery' ), true);
     }
 add_action('wp_enqueue_scripts', 'my_scripts');
+
+
+
+function register_my_social_menu() {
+  register_nav_menu('my-social-menu',__( 'My Social Menu' ));
+}
+add_action( 'init', 'register_my_social_menu' );

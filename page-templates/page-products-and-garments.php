@@ -22,8 +22,9 @@
 						<div class="gutter">
 						
 							<article class="singlepost clearfix">
-												
-								<?php the_content(); ?>
+								
+								<?php the_content(); ?>				
+								<iframe src="http://www.4logowearables.com/islandembroidery" width="100%" height="630" frameborder="0" name="products"> </iframe>
 								
 								<div class="clear"></div>
 								<hr class="space25">

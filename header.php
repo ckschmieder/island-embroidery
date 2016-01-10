@@ -41,20 +41,24 @@
 				</div>	
 			</div>
 			<div class="container">
-				<div class="header_block gutter clearfix">
-					<?php if ( of_get_option('logo_image') ) { ?>
-					   <a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_url(of_get_option('logo_image')); ?>" /></a>
-					<?php } else if (of_get_option('header_logo_text1')){  ?>
-					    <a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><span><?php echo esc_html(of_get_option('header_logo_text1')); ?></span> <?php echo esc_html(of_get_option('header_logo_text2')); ?> <p class="italic"><?php bloginfo('description'); ?></p></a>
-					<?php } else {  ?>
-						<a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><span><?php bloginfo('name'); ?></span><p class="italic"><?php bloginfo('description'); ?></p></a>
-					<?php } ?>
-					<nav class="menucontainer clearfix">
+				<div class="wrap">
+					<div class="title-area">
+						<?php if ( of_get_option('logo_image') ) { ?>
+						   <a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_url(of_get_option('logo_image')); ?>" /></a>
+						<?php } else if (of_get_option('header_logo_text1')){  ?>
+						    <a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><span><?php echo esc_html(of_get_option('header_logo_text1')); ?></span> <?php echo esc_html(of_get_option('header_logo_text2')); ?> <p class="italic"><?php bloginfo('description'); ?></p></a>
+						<?php } else {  ?>
+							<a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><span><?php bloginfo('name'); ?></span><p class="italic"><?php bloginfo('description'); ?></p></a>
+						<?php } ?>
+					</div>
+					<nav class="menucontainer clearfix">					
+						
 						<?php if ( has_nav_menu( 'primary' ) ) { ?>
 						   <?php wp_nav_menu( array('container'=> '', 'theme_location' => 'primary', 'items_wrap'  => '<ul class="menutop">%3$s</ul>'  ) ); ?>
 						<?php } else { ?>
 							<?php wp_nav_menu(  array( 'menu_class'  => 'menutop') ); ?>	
 						<?php } ?>
+					
 						<a class="menuicon" href="#"><?php _e( 'Menu', 'kage' ); ?></a>
 						<?php if ( has_nav_menu( 'primary' ) ) { ?>
 						   <?php wp_nav_menu( array('container'=> '', 'theme_location' => 'primary', 'items_wrap'  => '<ul class="menutopmob">%3$s</ul>'  ) ); ?>

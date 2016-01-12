@@ -35,7 +35,7 @@ get_header(); ?>
 		</section><!-- END Intro -->
 				
 		<section id="welcome" class="home-section">
-				<div id="welcome-section" class="section-inner welcome_block indent">			    
+				<div id="welcome-section" class="section-inner welcome_block indent_old">			    
 					<?php if ( of_get_option('welcome_title') ) { ?>
 					<div class="container">
 						<div class="columnwrapp clearfix">
@@ -189,7 +189,80 @@ get_header(); ?>
 				 </div><!-- .my-portfolio-section -->
 		</section><!-- END #portfolio-slider -->
 
-				
+
+		<section id="services_2"> 
+	        <div class="indent_services">
+	        	<?php if ( of_get_option('top_title') ) { ?>
+				<h1><span><?php echo esc_html(of_get_option('top_title')); ?></span></h1>
+
+	            <ul class="services_2">
+	                <div class="row">
+	                    <li class="test col-xs-12 col-sm-6 col-md-3">
+		                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_1_link')); ?>">
+								<?php if ( of_get_option('top_box_1_icon') ) { ?>
+		                        <figure class="testimonial-thumb">
+		                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_1_icon')); ?>" alt="">
+		                        </figure>
+		                        <?php } ?>
+		                        <aside class="testimonial-text">
+		                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_1_title')); ?></h3>
+			                        <div class="testimonial-excerpt">
+			                        <?php echo esc_html(of_get_option('top_box_1_content')); ?>
+			                        </div>
+		                        </aside>
+		                     </a>
+	                    </li>
+	                    <li class="test col-xs-12 col-sm-6 col-md-3">
+		                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_2_link')); ?>">
+								<?php if ( of_get_option('top_box_2_icon') ) { ?>
+		                        <figure class="testimonial-thumb">
+		                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_2_icon')); ?>" alt="">
+		                        </figure>
+		                        <?php } ?>
+		                        <aside class="testimonial-text">
+		                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_2_title')); ?></h3>
+			                        <div class="testimonial-excerpt">
+			                        <?php echo esc_html(of_get_option('top_box_2_content')); ?>
+			                        </div>
+		                        </aside>
+		                     </a>
+	                    </li>
+	                    <li class="test col-xs-12 col-sm-6 col-md-3">
+		                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_3_link')); ?>">
+								<?php if ( of_get_option('top_box_3_icon') ) { ?>
+		                        <figure class="testimonial-thumb">
+		                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_3_icon')); ?>" alt="">
+		                        </figure>
+		                        <?php } ?>
+		                        <aside class="testimonial-text">
+		                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_3_title')); ?></h3>
+			                        <div class="testimonial-excerpt">
+			                        <?php echo esc_html(of_get_option('top_box_3_content')); ?>
+			                        </div>
+		                        </aside>
+		                     </a>
+	                    </li>
+	                    <li class="test col-xs-12 col-sm-6 col-md-3">
+		                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_4_link')); ?>">
+								<?php if ( of_get_option('top_box_4_icon') ) { ?>
+		                        <figure class="testimonial-thumb">
+		                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_4_icon')); ?>" alt="">
+		                        </figure>
+		                        <?php } ?>
+		                        <aside class="testimonial-text">
+		                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_4_title')); ?></h3>
+			                        <div class="testimonial-excerpt">
+			                        <?php echo esc_html(of_get_option('top_box_4_content')); ?>
+			                        </div>
+		                        </aside>
+		                     </a>
+	                    </li>
+	                </div><!-- .row -->
+	            </ul><!-- .services_2 -->
+	            <?php } ?>
+	        </div><!-- .indent_services -->
+	    </section><!-- #services_2 -->
+
 
 		<section id="old-portfolio-block" class="home-section">
 				<!-- <div class="portfolio_block">

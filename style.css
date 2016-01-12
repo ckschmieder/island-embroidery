@@ -276,15 +276,13 @@ h1 span {
 
 
 
-.my-container {
+/*.my-container {
 	margin: 2px auto;
 	max-width: 1014px;
-}
+}*/
 
 .advertisement {
     border-radius: 15px 15px 15px 15px!important;
-    -moz-border-radius: 15px 15px 15px 15px;
-    -webkit-border-radius: 15px 15px 15px 15px;
     border: 0px solid #000000;
 }
 
@@ -736,6 +734,73 @@ ul.social {
   }
 }
 
+
+/*****************************
+Services_2
+*******************************/
+#services_2 {
+    background-color: aliceblue;
+}
+
+.indent_services {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+li.test {
+    list-style: none;
+}
+#services_2 a.service_item {
+  color: #000000;
+}
+
+#services_2 a.service_item:hover {
+  color: #42adea;
+}
+
+.testimonial-thumb img {
+    max-width: 180px;
+}
+
+.testimonial-thumb img {
+    border-radius: 210px;
+    border: 4px solid #000000;
+}
+
+.testimonial-thumb img:hover {
+    border: 4px solid #42adea;
+}
+
+.testimonial-title {
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin: 1rem 0 2.5rem; 
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) {
+    .indent_services {
+      max-width: 1000px;
+      padding: 40px;
+    }
+} 
+
+@media screen and (min-width: 960px) {
+    .indent_services {
+      max-width: 1000px;
+      padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .indent_services {
+      max-width: 1170px;
+      padding: 0px;
+    }
+}
+
 /*****************************
 Flexbox Ordering for Home Page
 *******************************/
@@ -747,12 +812,15 @@ Flexbox Ordering for Home Page
 
 #main-slider {order: 0;}
 #welcome {order: 1;}
-#services {order: 3;}
+#services {order: 4;}
 #portfolio-slider {order: 2;}
-#old-portfolio-block {order: 4;}
-#testimonials {order: 5;}
+#services_2 {order: 3;}
+#old-portfolio-block {order: 5;}
+#testimonials {order: 6;}
 
 
-.indent {
+.indent_old {
   padding: 0 14px!important;
 }
+
+

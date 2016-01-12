@@ -34,7 +34,15 @@ Updated: 2015-09-17 15:29:34
 .container {
   margin: 0 auto;
   max-width: 1330px;
+  padding-left: 0px; 
+  padding-right: 0px;
 }
+
+a:hover, a:focus {
+    /* color: #; */
+    text-decoration: none;
+}
+
 
 /**************
 Header
@@ -63,11 +71,25 @@ header a.logo {
     display: block
 }
 
+.menucontainer {
+  padding-top: 0; 
+  float: none;  
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
 @media only screen and (min-width: 769px) {
   .title-area {
       margin: 15px auto;
       float: none;
       width: 280px;
+  }
+  .menucontainer {
+    background-color: #53BAF5;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
   }
 }
 
@@ -86,26 +108,82 @@ header a.logo {
 }
 
 
-.menucontainer {
-  padding-top: 0;  
-}
+
 
 .menuicon {
   line-height: 1;
   padding: 5px 50px 5px 20px;
+  background-size: 2em;
 }
 
 .menutop {
-  font-family: 'exo_2.0semi_bold';
-  text-transform: uppercase;
-  font-size: 15px;  
+    display: none;
+    max-width: 1170px;
+    margin: 0 auto;
+    font-family: 'exo_2.0semi_bold';
+    text-transform: uppercase;
+    font-size: 15px;      
+  }
+
+  .menutop li {
+    text-align: center;
+    flex: 1 1 auto;    
+  }
+  .menutop li.first a {
+    padding-left: 21px
+  }
+  .menutop li:first-child a {
+    padding-left: 21px;
+  }
+  .menutop li.last a {
+    padding-right: 20px
+  }
+  .menutop li:last-child a {
+    padding-right: 20px;
+  }
+
+  .menutop li:hover {
+    background-color: #FFFFFF;  
+  }
+
+.menutop a {
+  color: #FFFFFF;
+
+}
+
+.menutop .current-menu-item a {
+    color: #000000;
 }
 
 .menutop a:hover {
   text-decoration: none;
 }
 
-.service_item {
+@media only screen and (min-width: 769px) {
+  .menutop {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'exo_2.0semi_bold';
+    text-transform: uppercase;
+    font-size: 15px;     
+  }
+
+}
+
+.menuicon {
+  text-align: left;
+}
+
+div#services-section {
+    padding-top: 0px;
+    padding-bottom: 0px;  
+    margin: 40px 0 0px;
+}
+
+
+.services_slider .service_item {
+  margin: 0 auto;
+  max-width: 290px;
   font-family: 'exo_2.0semi_bold', Helvetica, Arial, sans-serif;
 }
 
@@ -114,23 +192,34 @@ form.search_form {
 }
 
 
+#header .container, #main-slider .container, #portfolio-slider .container {
+  margin: 0 auto;
+}
+
+
+.main-slider {
+  padding-top: 3px;  
+  margin-bottom: 0px; 
+}
+
+
+
+
 /*#### Media Queries ####*/
 @media only screen and (min-width:769px) {
-
   .wrap {
     max-width: 769px;
     margin: 0 auto;
     padding: 0;
-
   }
+}
 
 @media only screen and (min-width:960px) {
-
-.wrap {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0;
-
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 @media only screen and (min-width:1200px) {
@@ -151,20 +240,11 @@ form.search_form {
 
 
 
-  .menucontainer {
-    float: none;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-  }
   
-}
+  
+
 
 @media only screen and (min-width:769px) and (max-width:1152px) {
-    .wrap {
-
-    }
     .mainslider {
     	 margin-top: 25px;       
     }
@@ -194,10 +274,7 @@ h1 span {
   text-transform: lowercase;
 }
 
-.container {
-	padding-left: 0;
-	padding-right: 0;
-}
+
 
 .my-container {
 	margin: 2px auto;
@@ -205,7 +282,7 @@ h1 span {
 }
 
 .advertisement {
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px!important;
     -moz-border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;
     border: 0px solid #000000;
@@ -269,30 +346,59 @@ h1 span {
   -webkit-filter: grayscale(100%);
 }
 
-.service_icon {
+/*#services-section .services_slider ul {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+@media only screen and (min-width:769px) {
+
+  #services-section .services_slider ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+}*/
+
+#services-section .services_slider li {
+  width: 100%;
+  margin: 0 auto auto;
+}
+@media only screen and (min-width:480px) {
+  #services-section .services_slider li {
+    width: 40%;
+    margin: 0 auto auto;
+  }
+}
+@media only screen and (min-width:769px) {
+  #services-section .services_slider li {
+    width: 20%;
+    margin: 0 auto auto;
+  }
+}
+
+#services-section span.service_icon {
+  margin: 0;
   max-width: 210px;
-    margin: 0 auto;
-    float: none;
+}
+
+#services-section li > a {
+  /*margin: 0 auto;*/
 }
 
 .service_icon img {
-border-radius: 210px;
-    border: 5px solid #fff;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
+  height: auto;
+  vertical-align: middle;
 }
 
 .service_title {
   text-align: center;
-    font-size: 1.6rem;
     display: block;
-    margin: 1rem 0;
+    margin: 25px 0;
 }
 
-.services_slider .service_item .service_icon {
-    margin: auto;
-}
 
 /*****************
 Slick Slider
@@ -314,11 +420,11 @@ Slick Slider
 
   .my-portfolio-section h1 {
     /*padding: 40px 0;*/
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
 
   .my-portfolio-section {
-    margin: 20px 0;
+    margin: 40px 0 0px;
   }
   .my-portfolio-slider {  
     border-top: 3px 0 solid black;
@@ -359,32 +465,105 @@ Welcome Section
 
 .welcome_block {
   margin-top: 5px;
-  padding: 30px 0;
+  padding: 40px 0;
 }
+
+#welcome img {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 3px #6f6f6f;
+    border-radius: 7px 7px 7px 7px;
+}
+
+#welcome-section > div.advertisement_block {
+    display: none;
+    top: auto;
+}
+
+#welcome-section figure {
+    padding: 20px;
+    margin-top: 35px;
+}
+
+
+
+
 
 @media only screen and (min-width:769px) {
-  .welcome_block { padding: 70px 0;}
+
+
+  .welcome_block { 
+    padding: 70px 0;
+  }
+  #welcome-section > div.advertisement_block {
+    display: none;
+  }
+  .column2 {
+  margin-top: 20px;
+  width: 41.6667%;
+  float: left;      
+  }
+
+  .column2a {
+    width: 51.6667%
+  }
+
+  .column2-indent {
+    /*margin-left: 4.3333%;*/
+  }
+  #welcome-section figure {
+    margin-top: 0px;
+} 
 }
 
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  #welcome-section > div.advertisement_block {
+    display: none!important;
+  }
+}
 
+#welcome-section > div.advertisement_block {
+    display: none!important;
+  }
 
 .adv_title {
     font-size: 1.2rem;
 }
 
-.welcome_block .advertisement_block {
-    top: auto;
+
+#welcome .button {
+  background-color: #53BAF5;
+  padding: 1px 2px;
+  border-radius: 17px;
+  border: 1px solid #202020;
+  font-size: 16px;
+}
+
+#welcome .button:hover {
+box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
 }
 
 
 .advertisement table td.tdw1 {
     width: 59%;
 }
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .welcome_block .advertisement_block {
+    display: none;
+  }
+}
 
+.welcome_text {
+    padding: 20px;
+}
 
 /*****************
 Footer Section
 ******************/
+
+#footer {
+  margin-top: 40px
+}
 
 .footer_block {
   text-align: center;
@@ -546,11 +725,16 @@ ul.social {
     flex-flow: row nowrap;  
   }
 
-
-
 }
 
-
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .welcome_block .advertisement_block {
+      position: static;
+      top: 0;
+      margin-bottom: 25px;
+      display: none;
+  }
+}
 
 /*****************************
 Flexbox Ordering for Home Page
@@ -569,3 +753,6 @@ Flexbox Ordering for Home Page
 #testimonials {order: 5;}
 
 
+.indent {
+  padding: 0 14px!important;
+}

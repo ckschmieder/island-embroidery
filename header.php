@@ -40,8 +40,8 @@
 					</div>
 				</div>	
 			</div>
-			<div class="container">
-				<div class="wrap">
+			<div class="title-nav-wrap">
+				
 					<div class="title-area">
 						<?php if ( of_get_option('logo_image') ) { ?>
 						   <a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_url(of_get_option('logo_image')); ?>" /></a>
@@ -66,6 +66,6 @@
 							<?php wp_nav_menu(  array( 'menu_class'  => 'menutopmob' ) ); ?>	
 						<?php } ?>
 					</nav>
-				</div>
+				
 			</div>
 		</header>

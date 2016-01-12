@@ -35,26 +35,30 @@ get_header(); ?>
 		</section><!-- END Intro -->
 				
 		<section id="welcome" class="home-section">
-				<div id="welcome-section" class="welcome_block">			    
+				<div id="welcome-section" class="section-inner welcome_block indent">			    
 					<?php if ( of_get_option('welcome_title') ) { ?>
 					<div class="container">
 						<div class="columnwrapp clearfix">
-						    <?php if ( of_get_option('welcome_image') ) { ?>
-							<div class="column2">						
-								<div class="gutter">
-									<img class="fullwidth" src="<?php echo esc_url(of_get_option('welcome_image')); ?>" alt="" />
-								</div>
-							</div>
-							<?php } ?>
-							<div class="column2">						
-								<div class="gutter">
-									<div class="welcome_text">
-										<h4><span><?php echo esc_html(of_get_option('welcome_title')); ?></span> <?php echo esc_html(of_get_option('welcome_title2')); ?></h4>
-										<p><?php echo esc_html(of_get_option('welcome_content')); ?></p>
-										<a class="button" href="<?php echo esc_url(of_get_option('welcome_button_link')); ?>"><?php echo esc_html(of_get_option('welcome_button_text')); ?></a>
+							<div class="column-wrap">
+							    <?php if ( of_get_option('welcome_image') ) { ?>
+								<div class="column2 column2-indent">						
+									<div class="gutter">
+									<figure>
+										<img class="fullwidth" src="<?php echo esc_url(of_get_option('welcome_image')); ?>" alt="" />
+									</figure>
 									</div>
 								</div>
-							</div>
+								<?php } ?>
+								<div class="column2 column2a">						
+									<div class="gutter">
+										<div class="welcome_text">
+											<h4><span><?php echo esc_html(of_get_option('welcome_title')); ?></span> <?php echo esc_html(of_get_option('welcome_title2')); ?></h4>
+											<p><?php echo esc_html(of_get_option('welcome_content')); ?></p>
+											<a class="button" href="<?php echo esc_url(of_get_option('welcome_button_link')); ?>"><?php echo esc_html(of_get_option('welcome_button_text')); ?></a>
+										</div>
+									</div>
+								</div>
+							</div>	
 						</div>
 					</div>
 					<?php } ?>
@@ -84,11 +88,12 @@ get_header(); ?>
 					</div>
 					<?php } ?>
 				</div><!-- .welcome_block -->
+				
 		</section><!-- END #welcome -->
 
 		<section id="services" class="home-section">
 
-				<div id="services-section" class="services_block"><!-- services-section services_block  -->				
+				<div id="services-section" class="section-inner services_block"><!-- services-section services_block  -->				
 					<div class="container">
 						<div class="gutter">
 							<?php if ( of_get_option('top_title') ) { ?>
@@ -155,7 +160,7 @@ get_header(); ?>
 		<section id="portfolio-slider" class="home-section">
 
 				<?php if ( of_get_option('title_area_2') ) { ?>
-				<div class="my-portfolio-section">
+				<div class="my-portfolio-section section-inner">
 					<div class="container">
 						<h1><span><?php echo esc_html(of_get_option('title_area_2')); ?></span></h1>
 

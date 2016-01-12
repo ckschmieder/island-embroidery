@@ -88,6 +88,7 @@ function my_scripts() {
         wp_enqueue_script( 'slick-js', get_stylesheet_directory_uri(). '/js/slick.min.js', array('jquery') );
         wp_enqueue_script( 'magnific-popup-js', get_stylesheet_directory_uri(). '/js/jquery.magnific-popup.js', array('jquery') );
         wp_enqueue_script( 'my-script', get_stylesheet_directory_uri() . '/js/my-script.js', array( 'jquery' ), true);
+        /*wp_enqueue_style( 'child-theme-css', get_stylesheet_directory_uri(). 'style.css' );*/
     }
 add_action('wp_enqueue_scripts', 'my_scripts');
 

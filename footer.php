@@ -7,7 +7,7 @@
  */
 ?>
 		<footer id="footer" class="clearfix">
-			<div class="footer_block">			
+			<div class="footer_block footer-inner">			
 				<div class="container columnwrapp clearfix">
 					<div class="column3">
 						<div class="gutter">

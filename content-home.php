@@ -5,36 +5,42 @@
  */
 get_header(); ?>
 
+<!-- #content -->
 <div id="content">
+	<!-- .main-wrap -->
 	<div id="main-wrap" class="main-wrap">
-	
+		
 		<section id="main-slider" class="home-section"><!-- #intro -->
+			<div id="main-slider-container" class="section-container">		
 
-			<?php if ( of_get_option('main_slider_image_1') ) { ?>	
-			<div class="container">
-				<div class="main-slider">		
-					<?php if ( of_get_option('main_slider_image_1') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_1')); ?>"></a></div><?php } ?>
-					<?php if ( of_get_option('main_slider_image_2') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_2')); ?>"></a></div><?php } ?>
-					<?php if ( of_get_option('main_slider_image_3') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_3')); ?>"></a></div><?php } ?>
-					<?php if ( of_get_option('main_slider_image_4') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_4')); ?>"></a></div><?php } ?>						    
-				</div><!-- END .main-slider -->
-			</div><!-- .container -->	
-			<?php } ?>
-
-		    <?php if ( of_get_option('top_image') ) { ?>
-			<div class="mainslider">
+				<?php if ( of_get_option('main_slider_image_1') ) { ?>	
 				<div class="container">
-					<div class="gutter clearfix">
-						<div class="imgbox">
-							<img class="fullwidth" src="<?php echo esc_url(of_get_option('top_image')); ?>" alt="" />
+					<div class="main-slider">		
+						<?php if ( of_get_option('main_slider_image_1') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_1')); ?>"></a></div><?php } ?>
+						<?php if ( of_get_option('main_slider_image_2') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_2')); ?>"></a></div><?php } ?>
+						<?php if ( of_get_option('main_slider_image_3') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_3')); ?>"></a></div><?php } ?>
+						<?php if ( of_get_option('main_slider_image_4') ) { ?><div><img src="<?php echo esc_url(of_get_option('main_slider_image_4')); ?>"></a></div><?php } ?>						    
+					</div><!-- END .main-slider -->
+				</div><!-- .container -->	
+				<?php } ?>
+
+			    <?php if ( of_get_option('top_image') ) { ?>
+				<div class="mainslider">
+					<div class="container">
+						<div class="gutter clearfix">
+							<div class="imgbox">
+								<img class="fullwidth" src="<?php echo esc_url(of_get_option('top_image')); ?>" alt="" />
+							</div>
 						</div>
-					</div>
-				</div>	
-			</div>
-			<?php } ?>
+					</div>	
+				</div>
+				<?php } ?>
+			</div><!-- END .section-container -->
 		</section><!-- END Intro -->
-				
+
+		<!-- #welcome -->			
 		<section id="welcome" class="home-section">
+			<div id="welcome-container" class="section-container">
 				<div id="welcome-section" class="section-inner welcome_block indent_old">			    
 					<?php if ( of_get_option('welcome_title') ) { ?>
 					<div class="container">
@@ -52,7 +58,7 @@ get_header(); ?>
 								<div class="column2 column2a">						
 									<div class="gutter">
 										<div class="welcome_text">
-											<h4><span><?php echo esc_html(of_get_option('welcome_title')); ?></span> <?php echo esc_html(of_get_option('welcome_title2')); ?></h4>
+											<h4><span>Welcome to</span><?php echo esc_html(of_get_option('welcome_title')); ?><span><?php echo esc_html(of_get_option('welcome_title2')); ?></span></h4>
 											<p><?php echo esc_html(of_get_option('welcome_content')); ?></p>
 											<a class="button" href="<?php echo esc_url(of_get_option('welcome_button_link')); ?>"><?php echo esc_html(of_get_option('welcome_button_text')); ?></a>
 										</div>
@@ -88,241 +94,123 @@ get_header(); ?>
 					</div>
 					<?php } ?>
 				</div><!-- .welcome_block -->
-				
+			</div><!-- END .section-container -->
 		</section><!-- END #welcome -->
 
-		<section id="services" class="home-section">
-
-				<div id="services-section" class="section-inner services_block"><!-- services-section services_block  -->				
-					<div class="container">
-						<div class="gutter">
-							<?php if ( of_get_option('top_title') ) { ?>
-							<h1><span><?php echo esc_html(of_get_option('top_title')); ?></span></h1>
-							<div class="services_slider">
-								<ul>
-									<li>
-										<a class="service_item" href="<?php echo esc_url(of_get_option('top_box_1_link')); ?>">
-										    <?php if ( of_get_option('top_box_1_icon') ) { ?>
-											<span class="service_icon">
-												<img class="default fullwidth" src="<?php echo esc_url(of_get_option('top_box_1_icon')); ?>" alt="" />
-												<img class="hover fullwidth" src="<?php echo esc_url(of_get_option('top_box_1_icon')); ?>" alt="" />
-											</span>
-											<?php } ?>
-											<span class="service_title"><?php echo esc_html(of_get_option('top_box_1_title')); ?></span>
-											<?php echo esc_html(of_get_option('top_box_1_content')); ?>
-										</a>
-									</li>
-									<li>
-										<a class="service_item" href="<?php echo esc_url(of_get_option('top_box_2_link')); ?>">
-										    <?php if ( of_get_option('top_box_2_icon') ) { ?>
-											<span class="service_icon">
-												<img class="default fullwidth" src="<?php echo esc_url(of_get_option('top_box_2_icon')); ?>" alt="" />
-												<img class="hover fullwidth" src="<?php echo esc_url(of_get_option('top_box_2_icon')); ?>" alt="" />
-											</span>
-											<?php } ?>
-											<span class="service_title"><?php echo esc_html(of_get_option('top_box_2_title')); ?></span>
-											<?php echo esc_html(of_get_option('top_box_2_content')); ?>
-										</a>
-									</li>
-									<li>
-										<a class="service_item" href="<?php echo esc_url(of_get_option('top_box_3_link')); ?>">
-										    <?php if ( of_get_option('top_box_3_icon') ) { ?>
-											<span class="service_icon">
-												<img class="default fullwidth" src="<?php echo esc_url(of_get_option('top_box_3_icon')); ?>" alt="" />
-												<img class="hover fullwidth" src="<?php echo esc_url(of_get_option('top_box_3_icon')); ?>" alt="" />
-											</span>
-											<?php } ?>
-											<span class="service_title"><?php echo esc_html(of_get_option('top_box_3_title')); ?></span>
-											<?php echo esc_html(of_get_option('top_box_3_content')); ?>
-										</a>
-									</li>
-									<li>
-										<a class="service_item" href="<?php echo esc_url(of_get_option('top_box_4_link')); ?>">
-										    <?php if ( of_get_option('top_box_4_icon') ) { ?>
-											<span class="service_icon">
-												<img class="default fullwidth" src="<?php echo esc_url(of_get_option('top_box_4_icon')); ?>" alt="" />
-												<img class="hover fullwidth" src="<?php echo esc_url(of_get_option('top_box_4_icon')); ?>" alt="" />
-											</span>
-											<?php } ?>
-											<span class="service_title"><?php echo esc_html(of_get_option('top_box_4_title')); ?></span>
-											<?php echo esc_html(of_get_option('top_box_4_content')); ?>
-										</a>
-									</li>
-								</ul>
-								<div class="clear"></div>
-							</div><!-- .services_slider -->
-							<?php } ?>
-						</div><!-- .gutter -->
-					</div><!-- .container -->
-				</div><!-- #services-section .services_block  -->
-		</section><!-- END #services -->
-
+		<!-- #portfolio-slider -->
 		<section id="portfolio-slider" class="home-section">
-
+			<div id="portfolio-slider-container" class="section-container">
 				<?php if ( of_get_option('title_area_2') ) { ?>
 				<div class="my-portfolio-section section-inner">
 					<div class="container">
 						<h1><span><?php echo esc_html(of_get_option('title_area_2')); ?></span></h1>
 
 						<div class="gallery gallery-responsive my-portfolio-slider">
-						   <?php if ( of_get_option('box_1_image') ) { ?>
+						   	<?php if ( of_get_option('box_1_image') ) { ?>
 						   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_1_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_1_image')); ?>"><div class="overlay"></div></a></div>
-						   <?php } ?>
-						   <?php if ( of_get_option('box_2_image') ) { ?>
+						   	<?php } ?>
+						   	<?php if ( of_get_option('box_2_image') ) { ?>
 						   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_2_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_2_image')); ?>"><div class="overlay"></div></a></div>
-						   <?php } ?>
-						   <?php if ( of_get_option('box_3_image') ) { ?>
+						  	<?php } ?>
+						    <?php if ( of_get_option('box_3_image') ) { ?>
 						   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_3_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_3_image')); ?>"><div class="overlay"></div></a></div>
-						   <?php } ?>
-						   <?php if ( of_get_option('box_4a_image') ) { ?>
+						    <?php } ?>
+						    <?php if ( of_get_option('box_4a_image') ) { ?>
 						   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_4a_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_4a_image')); ?>"><div class="overlay"></div></a></div>
-						   <?php } ?>
-						   <?php if ( of_get_option('box_5_image') ) { ?>
+						    <?php } ?>
+						    <?php if ( of_get_option('box_5_image') ) { ?>
 						   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_5_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_5_image')); ?>"><div class="overlay"></div></a></div>
-						   <?php } ?>
-						   <?php if ( of_get_option('box_6_image') ) { ?>
+						    <?php } ?>
+						    <?php if ( of_get_option('box_6_image') ) { ?>
 						   	<div class="inner"><a class="image-link" href="<?php echo esc_url(of_get_option('box_6_image')); ?>"><img src="<?php echo esc_url(of_get_option('box_6_image')); ?>"><div class="overlay"></div></a></div>
-						   <?php } ?>				    
-						 </div>
+						    <?php } ?>				    
+						</div>
 
-					 </div><!-- .container -->
-				 </div><!-- .my-portfolio-section -->
+						<a class="hyperlink" href="http://islandembroidery.ckschmieder.com/gallery/"><h3>See the full gallery <i class="fa fa-arrow-right"></i></h3></a>
+
+					</div><!-- .container -->
+				</div><!-- .my-portfolio-section -->
+			</div><!-- END .section-container -->
 		</section><!-- END #portfolio-slider -->
 
 
 		<section id="services_2"> 
-	        <div class="indent_services">
-	        	<?php if ( of_get_option('top_title') ) { ?>
-				<h1><span><?php echo esc_html(of_get_option('top_title')); ?></span></h1>
+			<div id="services_2-container" class="section-container">
+		        <div class="indent_services">
+		        	<?php if ( of_get_option('top_title') ) { ?>
+					<h1><span><?php echo esc_html(of_get_option('top_title')); ?></span></h1>
 
-	            <ul class="services_2">
-	                <div class="row">
-	                    <li class="test col-xs-12 col-sm-6 col-md-3">
-		                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_1_link')); ?>">
-								<?php if ( of_get_option('top_box_1_icon') ) { ?>
-		                        <figure class="testimonial-thumb">
-		                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_1_icon')); ?>" alt="">
-		                        </figure>
-		                        <?php } ?>
-		                        <aside class="testimonial-text">
-		                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_1_title')); ?></h3>
-			                        <div class="testimonial-excerpt">
-			                        <?php echo esc_html(of_get_option('top_box_1_content')); ?>
-			                        </div>
-		                        </aside>
-		                     </a>
-	                    </li>
-	                    <li class="test col-xs-12 col-sm-6 col-md-3">
-		                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_2_link')); ?>">
-								<?php if ( of_get_option('top_box_2_icon') ) { ?>
-		                        <figure class="testimonial-thumb">
-		                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_2_icon')); ?>" alt="">
-		                        </figure>
-		                        <?php } ?>
-		                        <aside class="testimonial-text">
-		                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_2_title')); ?></h3>
-			                        <div class="testimonial-excerpt">
-			                        <?php echo esc_html(of_get_option('top_box_2_content')); ?>
-			                        </div>
-		                        </aside>
-		                     </a>
-	                    </li>
-	                    <li class="test col-xs-12 col-sm-6 col-md-3">
-		                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_3_link')); ?>">
-								<?php if ( of_get_option('top_box_3_icon') ) { ?>
-		                        <figure class="testimonial-thumb">
-		                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_3_icon')); ?>" alt="">
-		                        </figure>
-		                        <?php } ?>
-		                        <aside class="testimonial-text">
-		                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_3_title')); ?></h3>
-			                        <div class="testimonial-excerpt">
-			                        <?php echo esc_html(of_get_option('top_box_3_content')); ?>
-			                        </div>
-		                        </aside>
-		                     </a>
-	                    </li>
-	                    <li class="test col-xs-12 col-sm-6 col-md-3">
-		                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_4_link')); ?>">
-								<?php if ( of_get_option('top_box_4_icon') ) { ?>
-		                        <figure class="testimonial-thumb">
-		                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_4_icon')); ?>" alt="">
-		                        </figure>
-		                        <?php } ?>
-		                        <aside class="testimonial-text">
-		                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_4_title')); ?></h3>
-			                        <div class="testimonial-excerpt">
-			                        <?php echo esc_html(of_get_option('top_box_4_content')); ?>
-			                        </div>
-		                        </aside>
-		                     </a>
-	                    </li>
-	                </div><!-- .row -->
-	            </ul><!-- .services_2 -->
-	            <?php } ?>
-	        </div><!-- .indent_services -->
-	    </section><!-- #services_2 -->
-
-
-		<section id="old-portfolio-block" class="home-section">
-				<!-- <div class="portfolio_block">
-					<div class="container">
-						<div class="gutter">
-							<h1><span><?php echo esc_html(of_get_option('title_area_2')); ?></span></h1>
-						</div>
-						<div class="portfolio_slider gallery gallery-responsive">
-							<ul>
-								<li>
-									<div class="gutter">
-									    <?php if ( of_get_option('box_1_image') ) { ?>
-										<div class="img_box">
-											<div class="inner">
-												<img class="fullwidth" src="<?php echo esc_url(of_get_option('box_1_image')); ?>" alt="" />
-												<a href="<?php echo esc_url(of_get_option('box_1_link')); ?>"><div class="overlay"></div></a>
-											</div>
-										</div>
-										<?php } ?>
-										 <?php if ( of_get_option('box_1_text') ) { ?><a class="btn" href="<?php echo esc_url(of_get_option('box_1_link')); ?>"><?php echo esc_html(of_get_option('box_1_text')); ?></a><?php } ?>
-									</div>
-								</li>
-								<li>
-									<div class="gutter">
-									    <?php if ( of_get_option('box_2_image') ) { ?>
-										<div class="img_box">
-											<div class="inner">
-												<img class="fullwidth" src="<?php echo esc_url(of_get_option('box_2_image')); ?>" alt="" />
-												<a href="<?php echo esc_url(of_get_option('box_2_link')); ?>"><div class="overlay"></div></a>
-											</div>
-										</div>
-										<?php } ?>
-										 <?php if ( of_get_option('box_2_text') ) { ?><a class="btn" href="<?php echo esc_url(of_get_option('box_2_link')); ?>"><?php echo esc_html(of_get_option('box_2_text')); ?></a><?php } ?>
-									</div>
-								</li>
-								<li>
-									<div class="gutter">
-									    <?php if ( of_get_option('box_3_image') ) { ?>
-										<div class="img_box">
-											<div class="inner">
-												<img class="fullwidth" src="<?php echo esc_url(of_get_option('box_3_image')); ?>" alt="" />
-												<a href="<?php echo esc_url(of_get_option('box_3_link')); ?>"><div class="overlay"></div></a>
-											</div>
-										</div>
-										<?php } ?>
-										 <?php if ( of_get_option('box_3_text') ) { ?><a class="btn" href="<?php echo esc_url(of_get_option('box_3_link')); ?>"><?php echo esc_html(of_get_option('box_3_text')); ?></a><?php } ?>
-									</div>
-								</li>
-
-								
-
-							</ul>
-							<div class="clear"></div>
-						</div>
-					</div>
-				</div> -->
-		</section><!-- END #old-portfolio-block -->
-				
+		            <ul class="services_2">
+		                <div class="row">
+		                    <li class="test col-xs-12 col-sm-6 col-md-3">
+			                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_1_link')); ?>">
+									<?php if ( of_get_option('top_box_1_icon') ) { ?>
+			                        <figure class="testimonial-thumb">
+			                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_1_icon')); ?>" alt="">
+			                        </figure>
+			                        <?php } ?>
+			                        <aside class="testimonial-text">
+			                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_1_title')); ?></h3>
+				                        <div class="testimonial-excerpt">
+				                        <?php echo esc_html(of_get_option('top_box_1_content')); ?>
+				                        </div>
+			                        </aside>
+			                     </a>
+		                    </li>
+		                    <li class="test col-xs-12 col-sm-6 col-md-3">
+			                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_2_link')); ?>">
+									<?php if ( of_get_option('top_box_2_icon') ) { ?>
+			                        <figure class="testimonial-thumb">
+			                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_2_icon')); ?>" alt="">
+			                        </figure>
+			                        <?php } ?>
+			                        <aside class="testimonial-text">
+			                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_2_title')); ?></h3>
+				                        <div class="testimonial-excerpt">
+				                        <?php echo esc_html(of_get_option('top_box_2_content')); ?>
+				                        </div>
+			                        </aside>
+			                     </a>
+		                    </li>
+		                    <li class="test col-xs-12 col-sm-6 col-md-3">
+			                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_3_link')); ?>">
+									<?php if ( of_get_option('top_box_3_icon') ) { ?>
+			                        <figure class="testimonial-thumb">
+			                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_3_icon')); ?>" alt="">
+			                        </figure>
+			                        <?php } ?>
+			                        <aside class="testimonial-text">
+			                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_3_title')); ?></h3>
+				                        <div class="testimonial-excerpt">
+				                        <?php echo esc_html(of_get_option('top_box_3_content')); ?>
+				                        </div>
+			                        </aside>
+			                     </a>
+		                    </li>
+		                    <li class="test col-xs-12 col-sm-6 col-md-3">
+			                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_4_link')); ?>">
+									<?php if ( of_get_option('top_box_4_icon') ) { ?>
+			                        <figure class="testimonial-thumb">
+			                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_4_icon')); ?>" alt="">
+			                        </figure>
+			                        <?php } ?>
+			                        <aside class="testimonial-text">
+			                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_4_title')); ?></h3>
+				                        <div class="testimonial-excerpt">
+				                        <?php echo esc_html(of_get_option('top_box_4_content')); ?>
+				                        </div>
+			                        </aside>
+			                     </a>
+		                    </li>
+		                </div><!-- .row -->
+		            </ul><!-- .services_2 -->
+		            <?php } ?>
+		        </div><!-- .indent_services -->
+		        </div><!-- END .section-container -->
+	    </section><!-- END #services_2 -->
 
 		<section id="testimonials" class="home-section">
+			<div id="testimonials-container" class="section-container">
 				<?php if ( of_get_option('testimonial_box_text') ) { ?>
 				<div class="testimonial_block">
 					<div class="container">
@@ -337,6 +225,7 @@ get_header(); ?>
 					</div>
 				</div>
 				<?php } ?>
+			</div><!-- END .section-container -->
 		</section><!-- END #portfolio-slider -->
 
 	</div><!-- END #main-wrap  -->

@@ -25,7 +25,8 @@
 						<ul class="contact_info">
 							<?php if ( of_get_option('header_phone') ) { ?><li><span class="phone_icon"><?php echo esc_html(of_get_option('header_phone')); ?></span></li><?php } ?>
 							<?php if ( of_get_option('header_email') ) { ?><li><a class="mail_icon" href="mailto:<?php echo esc_html(of_get_option('header_email')); ?>"><?php echo esc_html(of_get_option('header_email')); ?></a></li><?php } ?>
-						</ul>
+						</ul>					
+
 						<form class="search_form" action="<?php echo esc_url(home_url('/')); ?>" method="post" enctype="multipart/form-data">
 							<div class="outerwrapp">
 								<div class="innerwrapp">
@@ -39,6 +40,9 @@
 						</form>
 					</div>
 				</div>	
+			</div>
+			<div>				
+				<?php if ( has_nav_menu( 'my-social-menu' ) ) { ?><?php wp_nav_menu( array('container'=> 'nav', 'container_class' => 'social-menu menu', 'container_id' => 'social-menu', 'theme_location' => 'my-social-menu', 'link_before' => '<span class="screen-reader-text">', 'link_after' => '</span>', 'items_wrap'  => '<ul class="menusoc">%3$s</ul>'  ) ); ?><?php } ?>
 			</div>
 			<div class="title-nav-wrap">
 				

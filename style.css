@@ -1018,8 +1018,37 @@ Styles for social media menu
 
 /* Flexbox stuff */
 
-.social-menu ul {
+#social-menu ul.menusoc {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-menu ul.menusoc {
+  /*margin-top: 40px;*/
+  padding: 10px;
+  text-align: center;
+  font-family: Raleway;
+  height: 40px;
+  /*box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);*/
+}
+
+#social-menu ul.menusoc {
+  background: #BE2723;
+}
+
+#social-menu ul.menusoc a {
+  width: 40px;
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 0px;
+}
+#social-menu ul.menusoc a:hover {
+  background-color: #ffffff;
+  color: #BE2723;
+  padding: 10px 10px;
 }

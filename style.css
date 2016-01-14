@@ -48,6 +48,20 @@ a:hover, a:focus {
 Header
 ***************/
 
+#header {
+  box-shadow: 0px 2px 4px -4px rgba(0,0,0,0.65);
+}
+.topbar {
+    padding: 8px 0;
+}
+
+#header-bg {
+  /*min-height: 140px;*/
+  background: url("http://islandembroidery.ckschmieder.com/wp-content/uploads/2016/01/background-slider-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 header a.logo {
   width: 277px;
   height: auto;
@@ -77,7 +91,18 @@ header a.logo {
   text-align: center;
   width: 100%;
   max-width: 100%;
-  text-align: center;
+}
+
+.menutopmob {
+  text-align: left;
+}
+
+@media only screen and (min-width: 481px) {
+
+header > .topbar {
+  display: none;
+}
+
 }
 
 @media only screen and (min-width: 769px) {
@@ -87,11 +112,13 @@ header a.logo {
       width: 280px;
   }
   .menucontainer {
-    background-color: #53BAF5;
+    background-color: #BE2723;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
   }
 }
+
+
 
 @media only screen and (min-width: 992px) {
   .title-area {
@@ -102,7 +129,7 @@ header a.logo {
 
 @media only screen and (min-width: 1140px) {
   .title-area {
-      margin: 15px auto;
+      margin: 0 auto;
       float: none;
   }
 }
@@ -148,7 +175,6 @@ header a.logo {
 
 .menutop a {
   color: #FFFFFF;
-
 }
 
 .menutop .current-menu-item a {
@@ -157,6 +183,24 @@ header a.logo {
 
 .menutop a:hover {
   text-decoration: none;
+  color: #be2723;
+}
+
+.menutopmob a {
+    border-color: #BE2723;
+    background-color: rgba(43,43,43,.9);
+}
+
+.menutop ul.sub-menu {
+  border-color: #BE2723;
+}
+
+.menutop .sub-menu a {
+  color: #be2723;
+}
+
+.menutop .sub-menu a:hover {
+  color: #be2723;
 }
 
 @media only screen and (min-width: 769px) {
@@ -170,8 +214,11 @@ header a.logo {
 
 }
 
-.menuicon {
+a.menuicon {
   text-align: left;
+  color: #BE2723;
+
+
 }
 
 div#services-section {
@@ -185,6 +232,33 @@ div#services-section {
   margin: 0 auto;
   max-width: 290px;
   font-family: 'exo_2.0semi_bold', Helvetica, Arial, sans-serif;
+}
+
+.pagetitle {
+      padding: 5px 5px;
+      margin: 0;
+      background-color: transparent;
+      color: #000000;
+      background-color: white;
+      border-bottom: 2px solid #000000;
+      /*box-shadow: inset 0px 0px 22px 3px rgba(0,0,0,0.68);*/
+      padding: 15px 5px 10px;
+      margin-bottom: 0;
+}
+
+.pagetitle .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+  
+.pagetitle h5 {
+  font-family: 'embroidery';
+  font-size: 52px;
+  text-align: center;
+  text-decoration: lowercase;
+  padding: 10px 5px;
+  margin-bottom: 0;
+
 }
 
 form.search_form {
@@ -456,20 +530,26 @@ Slick Slider
 
 
 
-.hyperlink {
-  text-align: center;
-  color: #3366BB;
+a.hyperlink {
+  display: block;
+  color: #BE2723;
   padding: 15px 10px;  
 }
 
-.hyperlink:hover {
-  color: #3366BB;
+a.hyperlink:hover {
+  color: #BE2723;
   text-decoration: underline; 
 }
 
-.hyperlink h3 {
-  font-size: 1.3rem;
-  text-transform: uppercase;
+a.hyperlink span {
+  font-size: 1.4rem;
+  font-style: bold;
+  display: block;
+  text-align: center;
+}
+
+a.hyperlink span:hover {
+  text-shadow: .2px .2px #000000;
 }
 
 /*****************
@@ -554,7 +634,7 @@ Welcome Section
 
 
 a.button {
-  background-color: #53BAF5;
+  background-color: #BE2723;
   padding: 1px 2px;
   border-radius: 17px;
   border: 1px solid #202020;
@@ -562,7 +642,8 @@ a.button {
 }
 
 #welcome .button:hover {
-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+  background: hsla(2,100%,44%,1);
 }
 
 
@@ -769,6 +850,10 @@ ul.services_2 {
     padding: 0 40px;
 }
 
+#services_2 h1 {
+    margin: 0px;
+}
+
 li.test {
     list-style: none;
     padding-top: 35px;
@@ -778,7 +863,7 @@ li.test {
 }
 
 #services_2 a.service_item:hover {
-  color: #42adea;
+  color: #BE2723;
 }
 
 .testimonial-thumb {
@@ -792,7 +877,7 @@ li.test {
 }
 
 .testimonial-thumb img:hover {
-    border: 4px solid #42adea;
+    border: 4px solid #BE2723;
 }
 
 .testimonial-title {
@@ -808,21 +893,21 @@ li.test {
 @media screen and (min-width: 769px) {
     .indent_services {
       max-width: 1000px;
-      padding-top: 40px;
+      padding-top: 0px;
     }
 } 
 
 @media screen and (min-width: 960px) {
     .indent_services {
       max-width: 1000px;
-      padding-top: 40px;
+      padding-top: 0px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .indent_services {
       max-width: 1170px;
-      padding-top: 40px;
+      padding-top: 0px;
     }
 }
 
@@ -921,7 +1006,7 @@ Accessibility
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #21759b;
+  color: #BE2723;
   display: block;
   font-size: 14px;
   font-weight: bold;
@@ -1051,4 +1136,108 @@ Styles for social media menu
   background-color: #ffffff;
   color: #BE2723;
   padding: 10px 10px;
+}
+
+
+/* Styles for mixed menu (drop-down + social) */
+.nav-mixed {
+    display: flex;
+    background: hsl(0, 0%, 15%);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+/*header .title-area {
+
+    display: flex;
+    justify-content: space-between;
+    height: 220px;
+    align-items: center;
+
+}
+*/
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––– */
+footer ul.social{
+  display: block;
+  margin: 0;
+  padding: 2% 0 5%;
+  list-style-type: none;
+  text-align: center;
+}
+footer ul.social li{
+  font-size: 2.5em;
+  display: inline;
+  padding: 0 2%;
+  float: none;
+  margin-left: 0;
+}
+footer ul.social li a{
+  color: #666;
+}
+
+footer ul.social li.facebook a:hover{color: rgb(59,89,152);}
+footer ul.social li.twitter a:hover{color: rgb(0,172,237);}
+footer ul.social li.instagram a:hover{color: rgb(81,127,237);}
+footer ul.social li.youtube a:hover{color: rgb(187,0,0);}
+footer ul.social li.flickr a:hover{color: rgb(255,0, 132);}
+footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
+
+
+.copyright_block {
+    background-color: #BE2723;
+}
+
+#footer .widget {
+    margin-bottom: 25px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+/*Flexbox footer*/
+.footer-widget-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––– */
+/* Larger than mobile */
+@media (max-width: 479px) {
+  footer ul.social li a{font-size: .75em;}
+}
+
+@media only screen and (min-width: 769px) {
+  footer ul.social li {
+    font-size: 3.0em;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  footer ul.social li {
+    font-size: 3.0em;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  footer ul.social li {
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .footer-widget-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
 }

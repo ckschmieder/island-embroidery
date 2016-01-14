@@ -94,7 +94,33 @@ add_action('wp_enqueue_scripts', 'my_scripts');
 
 
 
-function register_my_social_menu() {
+function register_my_menus() {
   register_nav_menu('my-social-menu',__( 'My Social Menu' ));
+  register_nav_menu('my-mixed-menu',__( 'My Mixed Menu' ));
 }
-add_action( 'init', 'register_my_social_menu' );
+add_action( 'init', 'register_my_menus' );
+
+
+if ( ! function_exists( 'ck_widgets_init' ) ) :
+function ck_widgets_init() {
+    register_sidebar(array(
+        'name' => __( 'Header Widget Area 1', "kage"),
+        'id' => 'header-widget-area-1',
+        'description' => __( 'The header widget area 2', "kage"),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s"> ', 
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3><hr>',
+    ));
+    register_sidebar(array(
+        'name' => __( 'Header Widget Area 2', "kage"),
+        'id' => 'header-widget-area-2',
+        'description' => __( 'The header widget area 2', "kage"),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s"> ', 
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3><hr>',
+    ));      
+}
+endif;
+add_action( 'widgets_init', 'ck_widgets_init' );

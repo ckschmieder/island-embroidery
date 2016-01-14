@@ -126,7 +126,7 @@ get_header(); ?>
 						    <?php } ?>				    
 						</div>
 
-						<a class="hyperlink" href="http://islandembroidery.ckschmieder.com/gallery/"><h3>See the full gallery <i class="fa fa-arrow-right"></i></h3></a>
+						<a class="hyperlink" href="http://islandembroidery.ckschmieder.com/gallery/"><span>See the full gallery <i class="fa fa-arrow-right"></i></span></a>
 
 					</div><!-- .container -->
 				</div><!-- .my-portfolio-section -->

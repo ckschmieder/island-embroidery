@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Dakota
+ * Template Name: Graments
  * 
  * @package Kage 
  */
@@ -19,7 +19,7 @@
 					<section class="pagesection fullwidthpage">
 						<div class="gutter">
 							<article class="singlepost clearfix">
-								<iframe src="http://www.dakotacollectibles.com/dc_catalog/default.aspx" width="100%" height="2400px" frameborder="0"> </iframe>								
+								<iframe src="http://www.4logowearables.com/islandembroidery" width="100%" height="2400px" frameborder="0" name="products"> </iframe>
 								<div class="clear"></div>
 								<hr class="space25">
 								<p><?php posts_nav_link(); ?></p>

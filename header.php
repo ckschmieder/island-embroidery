@@ -41,12 +41,12 @@
 					</div>
 				</div>	
 			</div>
-			<div>				
-				<?php if ( has_nav_menu( 'my-social-menu' ) ) { ?><?php wp_nav_menu( array('container'=> 'nav', 'container_class' => 'social-menu menu', 'container_id' => 'social-menu', 'theme_location' => 'my-social-menu', 'link_before' => '<span class="screen-reader-text">', 'link_after' => '</span>', 'items_wrap'  => '<ul class="menusoc">%3$s</ul>'  ) ); ?><?php } ?>
-			</div>
-			<div class="title-nav-wrap">
 				
-					<div class="title-area">
+			<div id="header-bg" class="container-fluid">
+			<div class="header-bg">
+			<div class="header-overlay">
+				<div class="title-area">
+					<div class="header-logo">
 						<?php if ( of_get_option('logo_image') ) { ?>
 						   <a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_url(of_get_option('logo_image')); ?>" /></a>
 						<?php } else if (of_get_option('header_logo_text1')){  ?>
@@ -55,21 +55,36 @@
 							<a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><span><?php bloginfo('name'); ?></span><p class="italic"><?php bloginfo('description'); ?></p></a>
 						<?php } ?>
 					</div>
-					<nav class="menucontainer clearfix">					
-						
-						<?php if ( has_nav_menu( 'primary' ) ) { ?>
-						   <?php wp_nav_menu( array('container'=> '', 'theme_location' => 'primary', 'items_wrap'  => '<ul class="menutop">%3$s</ul>'  ) ); ?>
-						<?php } else { ?>
-							<?php wp_nav_menu(  array( 'menu_class'  => 'menutop') ); ?>	
-						<?php } ?>
-					
-						<a class="menuicon" href="#"><?php _e( 'Menu', 'kage' ); ?></a>
-						<?php if ( has_nav_menu( 'primary' ) ) { ?>
-						   <?php wp_nav_menu( array('container'=> '', 'theme_location' => 'primary', 'items_wrap'  => '<ul class="menutopmob">%3$s</ul>'  ) ); ?>
-						<?php } else { ?>
-							<?php wp_nav_menu(  array( 'menu_class'  => 'menutopmob' ) ); ?>	
-						<?php } ?>
-					</nav>
+					<!-- <div class="header-right">
+						<div class="header-widget-1">
+							<?php if ( is_active_sidebar('header-widget-area-1') ) : ?>
+								<?php dynamic_sidebar('header-widget-area-1'); ?>
+								<?php endif; ?>
+						</div>
+						<div class="header-widget-2">
+							<?php if ( is_active_sidebar('header-widget-area-2') ) : ?>
+								<?php dynamic_sidebar('header-widget-area-2'); ?>
+								<?php endif; ?>
+						</div>
+					</div> -->
+				</div>
+			</div><!-- header-overlay -->
+			</div><!-- header-bg -->
+			</div><!-- container -->
+			<nav class="menucontainer clearfix">					
 				
-			</div>
+				<?php if ( has_nav_menu( 'primary' ) ) { ?>
+				   <?php wp_nav_menu( array('container'=> '', 'theme_location' => 'primary', 'items_wrap'  => '<ul class="menutop">%3$s</ul>'  ) ); ?>
+				<?php } else { ?>
+					<?php wp_nav_menu(  array( 'menu_class'  => 'menutop') ); ?>	
+				<?php } ?>
+			
+				<a class="menuicon" href="#"><?php _e( 'Menu', 'kage' ); ?></a>
+				<?php if ( has_nav_menu( 'primary' ) ) { ?>
+				   <?php wp_nav_menu( array('container'=> '', 'theme_location' => 'primary', 'items_wrap'  => '<ul class="menutopmob">%3$s</ul>'  ) ); ?>
+				<?php } else { ?>
+					<?php wp_nav_menu(  array( 'menu_class'  => 'menutopmob' ) ); ?>	
+				<?php } ?>
+			</nav>				
+	
 		</header>

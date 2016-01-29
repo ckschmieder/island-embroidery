@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+/* force scrollbar */
+/*html { overflow-y: scroll; }*/
+
+
+/* ---- isotope ---- */
+
+.grid {
+  /* background: #DDD; */
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.33%;
+}
+
+@media screen and (min-width: 650px) {
+
+  .grid-sizer,
+  .grid-item {
+  	width: 25%;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+  }
+
+}
+
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}

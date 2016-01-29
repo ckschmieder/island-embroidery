@@ -253,7 +253,7 @@ div#services-section {
   
 .pagetitle h5 {
   font-family: 'embroidery';
-  font-size: 52px;
+  font-size: 42px;
   text-align: center;
   text-decoration: lowercase;
   padding: 10px 5px;
@@ -483,7 +483,7 @@ Slick Slider
     margin: 2px 0px;
   }
 
-  img {
+  .main-slider img {
     width: 100%;
     height: auto;
   }
@@ -1239,5 +1239,51 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/*
+ *  Facebook Plugin Widget 
+ */
+
+.cff-wrapper {
+  max-width: 340px;
+}
+
+
+.cff-likebox {
+  max-width: 340px;
+}
+
+#u_0_0 > div {
+  width: auto;
+}
+
+#u_0_3 > div.uiScaledImageContainer._2zfr {
+  width: auto;
+}
+
+.uiScaledImageContainer {
+  width: auto;
+}
+
+.textwidget {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/*
+ *  Posts and Pages 
+ */
+
+.singlepost {
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 769px) {
+  .pagesidebar {
+    margin-right: 7px;
   }
 }

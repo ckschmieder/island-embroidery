@@ -1,2 +1,17 @@
 kage-child-project.sublime-workspace
 kage-child-project.sublime-project
+
+### Sass ###
+.sass-cache
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+config.codekit
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+node_modules

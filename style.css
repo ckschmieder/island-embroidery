@@ -1247,12 +1247,14 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
  */
 
 .cff-wrapper {
-  max-width: 340px;
+  /*max-width: 340px;*/
+  background: #2b2b2b;
+  padding: 5px 10px;
 }
 
 
 .cff-likebox {
-  max-width: 340px;
+  
 }
 
 #u_0_0 > div {
@@ -1278,12 +1280,82 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
  */
 
 .singlepost {
-  padding: 0 5px;
-  margin-bottom: 10px;
+    background: #FFF;
+    clear: both;
+    margin: 20px 0;
+    /*overflow: hidden;*/
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.pagesection, .pagesidebar {    
+    width: auto;
+    float: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    
+
+.widget {
+  clear: both;
+  float: left;
+  font-size: 14px;
+  margin: 20px 0 0 0;
+  /*padding: 20px;*/
+  position: relative;
+  width: 100%;
+}
+
+.pagesidebar .widget {
+  /*background: #2b2b2b;*/
+}
+
+/* Like box */
+.cff-likebox.cff-top.cff-outside {
+  /*max-width: 340px;*/
+  margin: 0;
+  padding: 10px 10px 0px 10px;
+  background: #2b2b2b;
 }
 
 @media only screen and (min-width: 769px) {
-  .pagesidebar {
-    margin-right: 7px;
+  
+  .pagesection, .pagesidebar {  
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    position: relative;
   }
+
+  .pagesidebar {
+    width: 31.333%;
+  }
+
+  .pagesection {
+    width: 64.667%;
+  }
+}
+
+body {
+  background: #F8F8F8;
+  color: #666;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.gutter {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+hr.space25 {
+  margin: 10px 0px;
 }

@@ -22,8 +22,7 @@
 								<?php the_content(); ?>
 								<div class="clear"></div>
 								<hr class="space25">
-								<p><?php posts_nav_link(); ?></p>
-								<?php comments_template(); ?>
+								<p><?php posts_nav_link(); ?></p>								
 								<?php kage_paginate_page(); ?> 
 							</article>
 						</div>

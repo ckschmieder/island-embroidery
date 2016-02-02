@@ -660,14 +660,6 @@ a.button {
     padding: 20px;
 }
 
-/*****************
-Footer Section
-******************/
-
-
-.footer_block {
-  text-align: center;
-}
     
 /*****************
 Contact Form
@@ -794,6 +786,10 @@ center{
 input {
     position: relative;
     z-index: 9999;
+}
+
+.wpcf7-form-control-wrap > * {
+    max-width: 100%;
 }
 
 /*****************************
@@ -1160,8 +1156,14 @@ Styles for social media menu
 */
 
 
-/* Footer
+/* ––––––––––––––––––––––––––––––––––––––––––––––
+Footer
 –––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer_block {
+  text-align: center;
+}
+
 footer ul.social{
   display: block;
   margin: 0;

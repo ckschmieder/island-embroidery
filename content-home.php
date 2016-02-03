@@ -145,13 +145,13 @@ get_header(); ?>
 		                    <li class="test col-xs-12 col-sm-6 col-md-3">
 			                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_1_link')); ?>">
 									<?php if ( of_get_option('top_box_1_icon') ) { ?>
-			                        <figure class="testimonial-thumb">
+			                        <figure class="service-thumb">
 			                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_1_icon')); ?>" alt="">
 			                        </figure>
 			                        <?php } ?>
-			                        <aside class="testimonial-text">
-			                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_1_title')); ?></h3>
-				                        <div class="testimonial-excerpt">
+			                        <aside class="service-text">
+			                            <h3 class="service-title text-center"><?php echo esc_html(of_get_option('top_box_1_title')); ?></h3>
+				                        <div class="service-excerpt">
 				                        <?php echo esc_html(of_get_option('top_box_1_content')); ?>
 				                        </div>
 			                        </aside>
@@ -160,13 +160,13 @@ get_header(); ?>
 		                    <li class="test col-xs-12 col-sm-6 col-md-3">
 			                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_2_link')); ?>">
 									<?php if ( of_get_option('top_box_2_icon') ) { ?>
-			                        <figure class="testimonial-thumb">
+			                        <figure class="service-thumb">
 			                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_2_icon')); ?>" alt="">
 			                        </figure>
 			                        <?php } ?>
-			                        <aside class="testimonial-text">
-			                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_2_title')); ?></h3>
-				                        <div class="testimonial-excerpt">
+			                        <aside class="service-text">
+			                            <h3 class="service-title text-center"><?php echo esc_html(of_get_option('top_box_2_title')); ?></h3>
+				                        <div class="service-excerpt">
 				                        <?php echo esc_html(of_get_option('top_box_2_content')); ?>
 				                        </div>
 			                        </aside>
@@ -175,13 +175,13 @@ get_header(); ?>
 		                    <li class="test col-xs-12 col-sm-6 col-md-3">
 			                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_3_link')); ?>">
 									<?php if ( of_get_option('top_box_3_icon') ) { ?>
-			                        <figure class="testimonial-thumb">
+			                        <figure class="service-thumb">
 			                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_3_icon')); ?>" alt="">
 			                        </figure>
 			                        <?php } ?>
-			                        <aside class="testimonial-text">
-			                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_3_title')); ?></h3>
-				                        <div class="testimonial-excerpt">
+			                        <aside class="service-text">
+			                            <h3 class="service-title text-center"><?php echo esc_html(of_get_option('top_box_3_title')); ?></h3>
+				                        <div class="service-excerpt">
 				                        <?php echo esc_html(of_get_option('top_box_3_content')); ?>
 				                        </div>
 			                        </aside>
@@ -190,13 +190,13 @@ get_header(); ?>
 		                    <li class="test col-xs-12 col-sm-6 col-md-3">
 			                    <a class="service_item" href="<?php echo esc_url(of_get_option('top_box_4_link')); ?>">
 									<?php if ( of_get_option('top_box_4_icon') ) { ?>
-			                        <figure class="testimonial-thumb">
+			                        <figure class="service-thumb">
 			                            <img class="img-responsive center-block" src="<?php echo esc_url(of_get_option('top_box_4_icon')); ?>" alt="">
 			                        </figure>
 			                        <?php } ?>
-			                        <aside class="testimonial-text">
-			                            <h3 class="testimonial-title text-center"><?php echo esc_html(of_get_option('top_box_4_title')); ?></h3>
-				                        <div class="testimonial-excerpt">
+			                        <aside class="service-text">
+			                            <h3 class="service-title text-center"><?php echo esc_html(of_get_option('top_box_4_title')); ?></h3>
+				                        <div class="service-excerpt">
 				                        <?php echo esc_html(of_get_option('top_box_4_content')); ?>
 				                        </div>
 			                        </aside>
@@ -209,24 +209,22 @@ get_header(); ?>
 		        </div><!-- END .section-container -->
 	    </section><!-- END #services_2 -->
 
-		<section id="testimonials" class="home-section">
+		<!-- <section id="testimonials" class="home-section">
 			<div id="testimonials-container" class="section-container">
-				<?php if ( of_get_option('testimonial_box_text') ) { ?>
 				<div class="testimonial_block">
 					<div class="container">
 						<div class="testimonial_slider">
 							<ul>
 								<li>
-									<p class="quote"><?php echo esc_html(of_get_option('testimonial_box_text')); ?></p>
-									<p class="testimonial_auth"><?php echo esc_html(of_get_option('testimonial_box_name')); ?></p>
+									<p class="quote"></p>
+									<p class="testimonial_auth"></p>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<?php } ?>
-			</div><!-- END .section-container -->
-		</section><!-- END #portfolio-slider -->
+			</div>
+		</section> -->
 
 	</div><!-- END #main-wrap  -->
 </div><!-- END #content -->

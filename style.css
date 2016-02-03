@@ -6,11 +6,25 @@ Version: 1.0.1442518174
 Updated: 2015-09-17 15:29:34
 */
 
-@charset "UTF-8";
 
-/*.topbar {
-	display: none;
-}*/
+/* Flexbox Ordering for Home Page 
+----------------------------------*/
+
+#main-wrap { 
+  display: flex;
+  flex-direction: column;
+}
+
+#main-slider {order: 0;}
+#welcome {order: 1;}
+#portfolio-slider {order: 3;}
+#services_2 {order: 2;}
+#old-portfolio-block {order: 5;}
+#testimonials {order: 6;}
+
+
+/* Fonts 
+----------------------------------*/
 
 @font-face {
     font-family: 'embroidery';
@@ -30,6 +44,9 @@ Updated: 2015-09-17 15:29:34
     font-style: normal;
 }
 
+/* Basic Page Setup
+----------------------------------*/
+
 body {
   background: #F8F8F8;
   color: #666;
@@ -46,7 +63,7 @@ body {
   margin-right: 0px;
 }
 
-hr.space25 {
+.space25 {
   margin: 10px 0px;
 }
 
@@ -58,7 +75,6 @@ hr.space25 {
 }
 
 a:hover, a:focus {
-    /* color: #; */
     text-decoration: none;
 }
 
@@ -92,10 +108,6 @@ header a.logo {
   width: 100%;
 }
 
-/*.header_block {
-    padding: 0px;
-    margin: 10px 7px;
-}*/
 
 .title-area {
     width: 100%;
@@ -152,8 +164,6 @@ header > .topbar {
       float: none;
   }
 }
-
-
 
 
 .menuicon {
@@ -262,7 +272,6 @@ div#services-section {
       color: #000000;
       background-color: white;
       border-bottom: 2px solid #000000;
-      /*box-shadow: inset 0px 0px 22px 3px rgba(0,0,0,0.68);*/
       padding: 15px 5px 10px;
       margin-bottom: 0;
 }
@@ -298,9 +307,8 @@ form.search_form {
 }
 
 
+/* Media Queries */
 
-
-/*#### Media Queries ####*/
 @media only screen and (min-width:769px) {
   .wrap {
     max-width: 769px;
@@ -333,9 +341,6 @@ form.search_form {
   }
 }
 
-
-
-  
   
 
 
@@ -370,12 +375,6 @@ h1 span {
 }
 
 
-
-/*.my-container {
-	margin: 2px auto;
-	max-width: 1014px;
-}*/
-
 .advertisement {
     border-radius: 15px 15px 15px 15px!important;
     border: 0px solid #000000;
@@ -384,80 +383,55 @@ h1 span {
 
 /*  Flexbox Stuff  */
 
-    .flexbox-gallery-container { 
-    	margin: 0 .5vw auto;
-    	max-width: 1014px;
-    }
-
-    .flexbox-gallery { 
-      padding: .5vw;
-      font-size: 0;
-      display: -ms-flexbox;
-      -ms-flex-wrap: wrap;
-      -ms-flex-direction: column;
-      -webkit-flex-flow: row wrap; 
-      flex-flow: row wrap; 
-      display: -webkit-box;
-      display: flex;
-    }
-
-    .flexbox-gallery div { 
-      -webkit-box-flex: auto;
-      -ms-flex: auto;
-      flex: auto; 
-      width: 200px; 
-      margin: .5vw; 
-    }
-
-    .flexbox-gallery div img { 
-      width: 100%; 
-      height: auto; 
-    }
-
-    #flexbox-gallery-gutter {
-    	margin-left: calc(7px - .5vw);
-    	margin-right: calc(7px - .5vw);
-    }
-
-    .hyperlink > span {    
-      font-family: cursive;
-    }
-
-    @media screen and (max-width: 400px) {
-      .flexbox-gallery div { margin: 2px 0; }
-      .flexbox-gallery { padding: 0; }
-      .flexbox-gallery-container { margin-bottom: 20px; }
-      .flexbox-glallery-container .img_box { margin-bottom:20px }
-    }
-
-/*B&W*/
-.bw {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
+.flexbox-gallery-container { 
+	margin: 0 .5vw auto;
+	max-width: 1014px;
 }
 
-.bw:hover {
-  -webkit-filter: grayscale(100%);
-}
-
-/*#services-section .services_slider ul {
+.flexbox-gallery { 
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
 }
 
-@media only screen and (min-width:769px) {
+.flexbox-gallery div { 
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto; 
+  width: 200px; 
+  margin: .5vw; 
+}
 
-  #services-section .services_slider ul {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-  }
+.flexbox-gallery div img { 
+  width: 100%; 
+  height: auto; 
+}
 
-}*/
+#flexbox-gallery-gutter {
+	margin-left: calc(7px - .5vw);
+	margin-right: calc(7px - .5vw);
+}
+
+.hyperlink > span {    
+  font-family: cursive;
+}
+
+@media screen and (max-width: 400px) {
+  .flexbox-gallery div { margin: 2px 0; }
+  .flexbox-gallery { padding: 0; }
+  .flexbox-gallery-container { margin-bottom: 20px; }
+  .flexbox-glallery-container .img_box { margin-bottom:20px }
+}
+
+
+/* Main Slider
+----------------------------*/
 
 #services-section .services_slider li {
   width: 100%;
@@ -496,24 +470,24 @@ h1 span {
     margin: 25px 0;
 }
 
+/*--------------------------------------------------------------
+Slick Carousel
+--------------------------------------------------------------*/
 
-/*****************
-Slick Slider
-******************/
+/* Main Slider
+----------------------------*/
 
+.main-slider {
+  margin: 2px 0px;
+}
 
-/** Main Slider **/
+.main-slider img {
+  width: 100%;
+  height: auto;
+}
 
-  .main-slider {
-    margin: 2px 0px;
-  }
-
-  .main-slider img {
-    width: 100%;
-    height: auto;
-  }
-
-/** Gallery Slider **/
+/* Gallery Slider
+----------------------------*/
 
 #portfolio-slider-container {
   background-color: #EBEBEB; 
@@ -553,8 +527,6 @@ Slick Slider
   cursor: zoom-in;
 }
 
-
-
 a.hyperlink {
   display: block;
   color: #BE2723;
@@ -577,15 +549,9 @@ a.hyperlink span:hover {
   text-shadow: .2px .2px #000000;
 }
 
-/*****************
-Flex Slider
-******************/
-
-
-
-/*****************
+/*--------------------------------------------------------------
 Welcome Section
-******************/
+--------------------------------------------------------------*/
 
 .welcome_block {
   margin-top: 5px;
@@ -608,9 +574,6 @@ Welcome Section
     padding: 20px;
     margin-top: 35px;
 }
-
-
-
 
 
 @media only screen and (min-width:769px) {
@@ -685,10 +648,9 @@ a.button {
     padding: 20px;
 }
 
-
-/*----------------------------
+/*--------------------------------------------------------------
 Contact Page
-----------------------------*/
+--------------------------------------------------------------*/
 
 .map-container {
   margin-bottom: 20px;
@@ -739,34 +701,34 @@ Contact Page
 
 /* Input Styles */
 
-  .form{
-    width: 100%;
-    padding: 15px;
-    background:#f8f8f8;
-    border:1px solid rgba(0, 0, 0, 0.075);
-    margin-bottom:25px;
-    color:#727272 !important;
-    font-size:13px;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-  }
+.form{
+  width: 100%;
+  padding: 15px;
+  background:#f8f8f8;
+  border:1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom:25px;
+  color:#727272 !important;
+  font-size:13px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
 
-  .form:hover{
-    border:1px solid #586D74;
-  }
+.form:hover{
+  border:1px solid #586D74;
+}
 
-  .form:focus{
-    color: white;
-    outline: none;
-    border:1px solid #EEC856;
-  }
+.form:focus{
+  color: white;
+  outline: none;
+  border:1px solid #EEC856;
+}
 
-  .textarea{
-    height: 160px;
-    max-height: 160px;
-    /*max-width: 100%;*/
-  }
+.textarea{
+  height: 160px;
+  max-height: 160px;
+  /*max-width: 100%;*/
+}
   
 /* Generic Button Styles */
 
@@ -794,37 +756,38 @@ Contact Page
 
 /* Send Button Styles */
 
-  .form-btn{
-    width:180px;
-    display: block;
-    height: auto;
-    padding:15px;
-    color:#fff;
-    background:#586D74;
-    border:none;
-    border-radius:3px;
-    outline: none;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    margin:auto;
-    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  }
-
-  .form-btn:hover{
-    background:#111;
-    color: white;
-    border:none;
-  }
-
-  .form-btn:active{
-    opacity: 0.9;
-  }
-center{
-  margin-top:330px;
+.form-btn{
+  width:180px;
+  display: block;
+  height: auto;
+  padding:15px;
+  color:#fff;
+  background:#586D74;
+  border:none;
+  border-radius:3px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin:auto;
+  box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
 }
+
+.form-btn:hover{
+  background:#111;
+  color: white;
+  border:none;
+}
+
+.form-btn:active{
+  opacity: 0.9;
+}
+/*center{
+  margin-top:330px;
+}*/
+
 input {
     position: relative;
     z-index: 9999;
@@ -834,55 +797,10 @@ input {
     max-width: 100%;
 }
 
-/*****************************
-My Footer
-*******************************/
 
-.footer-wrap {
-  display: flex;
-  flex-flow: column nowrap;  
-}
-
-.footer-block {
-  padding: 20px;
-  flex: 1;
-}
-
-ul.social {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: space-around;
-}
-
-footer .column3 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
-
-@media screen and (min-width: 769px) {
-
-  .footer-wrap {
-    display: flex;
-    flex-flow: row nowrap;  
-  }
-
-}
-
-@media only screen and (max-width: 768px) and (min-width: 481px) {
-  .welcome_block .advertisement_block {
-      position: static;
-      top: 0;
-      margin-bottom: 25px;
-      display: none;
-  }
-}
-
-
-/*****************************
+/*--------------------------------------------------------------
 Services_2
-*******************************/
+--------------------------------------------------------------*/
 
 #services_2 span {
   background-color: #F8F8F8;
@@ -959,31 +877,12 @@ li.test {
     }
 }
 
-/*****************************
-LAYOUT
-*******************************/
+/*--------------------------------------------------------------
+Layout
+--------------------------------------------------------------*/
 
-/*
- *  Flexbox Ordering for Home Page 
- */
-
-#main-wrap { 
-  display: flex;
-  flex-direction: column;
-}
-
-#main-slider {order: 0;}
-#welcome {order: 1;}
-#portfolio-slider {order: 3;}
-#services_2 {order: 2;}
-#old-portfolio-block {order: 5;}
-#testimonials {order: 6;}
-
-
-/*
- *  Section Containers - (margin & padding) 
- */
-
+/* Section Containers 
+-----------------------------*/
 
 /* all section containers */
 .section-container {
@@ -1015,7 +914,7 @@ LAYOUT
 }
 
 
-/*section from parent theme not being used*/
+/*section from parent theme temporarily hidden while not being used*/
 #testimonials {
   display: none;
 }
@@ -1030,14 +929,14 @@ LAYOUT
 }
 
 
-
-/*****************************
-Social Menu Nav
-*******************************/
-
 /*--------------------------------------------------------------
-Accessibility
+Styles for social media menu
 --------------------------------------------------------------*/
+
+
+/* Accessibility
+-----------------------------*/
+
 /* Text meant only for screen readers */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -1068,10 +967,6 @@ Accessibility
   z-index: 100000; /* Above WP toolbar */
 }
 
-
-/*--------------------------------------------------------------
-Base styles that apply to all menus 
---------------------------------------------------------------*/
 .menu-section {
   padding-bottom: 2em;
   margin-bottom: 2em;
@@ -1098,9 +993,68 @@ Base styles that apply to all menus
 
 
 
+
+/* Styles for mixed menu (drop-down + social) */
+.nav-mixed {
+    display: flex;
+    background: hsl(0, 0%, 15%);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /*--------------------------------------------------------------
-Styles for social media menu
+My Footer
 --------------------------------------------------------------*/
+
+.footer-wrap {
+  display: flex;
+  flex-flow: column nowrap;  
+}
+
+.footer-block {
+  padding: 20px;
+  flex: 1;
+}
+
+ul.social {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+footer .column3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 769px) {
+
+  .footer-wrap {
+    display: flex;
+    flex-flow: row nowrap;  
+  }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .welcome_block .advertisement_block {
+      position: static;
+      top: 0;
+      margin-bottom: 25px;
+      display: none;
+  }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––
+Footer
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer_block {
+  text-align: center;
+}
+
 
 /* Find src URL and add in correct social media icon. */
 .social-menu li a:before {
@@ -1186,36 +1140,6 @@ Styles for social media menu
   padding: 10px 10px;
 }
 
-
-/* Styles for mixed menu (drop-down + social) */
-.nav-mixed {
-    display: flex;
-    background: hsl(0, 0%, 15%);
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-
-/*header .title-area {
-
-    display: flex;
-    justify-content: space-between;
-    height: 220px;
-    align-items: center;
-
-}
-*/
-
-
-/* ––––––––––––––––––––––––––––––––––––––––––––––
-Footer
-–––––––––––––––––––––––––––––––––––––––––––––– */
-
-.footer_block {
-  text-align: center;
-}
-
 footer ul.social{
   display: block;
   margin: 0;
@@ -1234,6 +1158,7 @@ footer ul.social li a{
   color: #666;
 }
 
+/*Oh hover, icons change color to match the offical color of the brand*/
 footer ul.social li.facebook a:hover{color: rgb(59,89,152);}
 footer ul.social li.twitter a:hover{color: rgb(0,172,237);}
 footer ul.social li.instagram a:hover{color: rgb(81,127,237);}
@@ -1264,6 +1189,7 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––– */
+
 /* Larger than mobile */
 @media (max-width: 479px) {
   footer ul.social li a{font-size: .75em;}
@@ -1306,10 +1232,6 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
   padding: 5px 10px;
 }
 
-
-.cff-likebox {
-  
-}
 
 #u_0_0 > div {
   width: auto;
@@ -1392,4 +1314,20 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
   .pagesection {
     width: 69.667%;
   }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––
+Custom Effects
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*Customizable hover effect by adding class below*/
+.bw {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.bw:hover {
+  -webkit-filter: grayscale(100%);
 }

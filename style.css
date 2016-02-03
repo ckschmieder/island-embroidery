@@ -59,19 +59,19 @@ body {
 }
 
 .gutter {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .space25 {
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1330px;
-  padding-left: 0px; 
-  padding-right: 0px;
+  padding-left: 0; 
+  padding-right: 0;
 }
 
 a:hover, a:focus {
@@ -84,7 +84,7 @@ Header
 ***************/
 
 #header {
-  box-shadow: 0px 2px 4px -4px rgba(0,0,0,0.65);
+  box-shadow: 0 2px 4px -4px rgba(0,0,0,0.65);
 }
 .topbar {
     padding: 8px 0;
@@ -184,7 +184,7 @@ header > .topbar {
 
   .menutop li {
     text-align: center;
-    flex: 1 1 auto; 
+    flex: 1; 
   }
   .menutop li.first a {
     padding-left: 21px
@@ -213,7 +213,6 @@ header > .topbar {
 }
 .menutop .current-menu-item a {
   color: #FFFFFF;
-  text-decoration: overline;
 }
 
 
@@ -254,9 +253,9 @@ a.menuicon {
 }
 
 div#services-section {
-    padding-top: 0px;
-    padding-bottom: 0px;  
-    margin: 40px 0 0px;
+    padding-top: 0;
+    padding-bottom: 0;  
+    margin: 40px 0 0;
 }
 
 
@@ -278,15 +277,14 @@ div#services-section {
 }
 
 .pagetitle .container {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
   
 .pagetitle h5 {
   font-family: 'embroidery';
   font-size: 42px;
   text-align: center;
-  text-decoration: lowercase;
   padding: 10px 5px;
   margin-bottom: 0;
 
@@ -304,7 +302,7 @@ form.search_form {
 
 .main-slider {
   padding-top: 3px;  
-  margin-bottom: 0px; 
+  margin-bottom: 0; 
 }
 
 
@@ -378,13 +376,13 @@ h1 span {
 
 .advertisement {
     border-radius: 15px 15px 15px 15px!important;
-    border: 0px solid #000000;
+    border: 0 solid #000000;
 }
 
 
-/*  Flexbox Stuff  */
+/*  Flexbox Gallery Stuff  */
 
-.flexbox-gallery-container { 
+/*.flexbox-gallery-container { 
 	margin: 0 .5vw auto;
 	max-width: 1014px;
 }
@@ -418,16 +416,17 @@ h1 span {
 	margin-left: calc(7px - .5vw);
 	margin-right: calc(7px - .5vw);
 }
+*/
 
-.hyperlink > span {    
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
-@media screen and (max-width: 400px) {
+/*@media screen and (max-width: 400px) {
   .flexbox-gallery div { margin: 2px 0; }
   .flexbox-gallery { padding: 0; }
   .flexbox-gallery-container { margin-bottom: 20px; }
   .flexbox-glallery-container .img_box { margin-bottom:20px }
+}*/
+
+.hyperlink > span {    
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 
@@ -456,10 +455,6 @@ h1 span {
   max-width: 210px;
 }
 
-#services-section li > a {
-  /*margin: 0 auto;*/
-}
-
 .service_icon img {
   height: auto;
   vertical-align: middle;
@@ -479,7 +474,7 @@ Slick Carousel
 ----------------------------*/
 
 .main-slider {
-  margin: 2px 0px;
+  margin: 2px 0;
 }
 
 .main-slider img {
@@ -504,15 +499,15 @@ Slick Carousel
 }
 
 .my-portfolio-slider {  
-  border-top: 3px 0 solid black;
-  border-bottom: 3px 0 solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 .my-portfolio-slider {  
   background-color: whitesmoke;
 }
 
 .slick-slider {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .inner {
@@ -541,7 +536,6 @@ a.hyperlink:hover {
 
 a.hyperlink span {
   font-size: 1.4rem;
-  font-style: bold;
   display: block;
   text-align: center;
 }
@@ -602,7 +596,7 @@ Welcome Section
   }
 
   #welcome-section figure {
-    margin-top: 0px;
+    margin-top: 0;
   } 
 
 }
@@ -631,7 +625,7 @@ a.button {
 }
 
 #welcome .button:hover {
-  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
   background: hsla(2,100%,44%,1);
 }
 
@@ -738,16 +732,16 @@ Contact Page
     background:#0A5175;
     display: block;
     width:120px;
-    margin:10px 0 0px 0;
+    margin:10px 0 0 0;
     border-radius:3px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     text-align:center;
     font-size:0.8em;
-    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
   }
 
   .button:hover{
@@ -771,9 +765,9 @@ Contact Page
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   margin:auto;
-  box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
 }
 
 .form-btn:hover{
@@ -818,7 +812,7 @@ ul.services_2 {
 }
 
 #services_2 h1 {
-    margin: 0px;
+    margin: 0;
 }
 
 li.test {
@@ -860,21 +854,21 @@ li.test {
 @media screen and (min-width: 769px) {
     .indent_services {
       max-width: 1000px;
-      padding-top: 0px;
+      padding-top: 0;
     }
 } 
 
 @media screen and (min-width: 960px) {
     .indent_services {
       max-width: 1000px;
-      padding-top: 0px;
+      padding-top: 0;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .indent_services {
       max-width: 1170px;
-      padding-top: 0px;
+      padding-top: 0;
     }
 }
 
@@ -893,15 +887,11 @@ Layout
 /* individual section containers */
 
 #main-slider-container {
-  padding: 0px 0 0px;
-}
-
-#portfolio-slider-container {
-  /*padding: 20px 0;*/
+  padding: 0 0 0;
 }
 
 #welcome-container {
-  padding: 0px 0px 30px;
+  padding: 0 0 30px;
   background-color: rgb(235, 235, 235);
 }
 
@@ -923,6 +913,7 @@ Layout
 .indent_old {
   padding: 0 14px!important;
 }
+
 @media only screen and (min-width: 769px) {
   .indent_old {
   padding: 40px 14px!important;
@@ -971,7 +962,6 @@ Styles for social media menu
 .menu-section {
   padding-bottom: 2em;
   margin-bottom: 2em;
-  border-bottom: 1px solid hsl(0, 0%, );
 }
 
 .menu ul {
@@ -1021,7 +1011,6 @@ ul.social {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-  align-items: space-around;
 }
 
 footer .column3 {
@@ -1133,7 +1122,7 @@ Footer
   font-size: 20px;
   text-decoration: none;
   padding: 0 10px;
-  margin: 0 0px;
+  margin: 0 0;
 }
 #social-menu ul.menusoc a:hover {
   background-color: #ffffff;
@@ -1149,7 +1138,7 @@ footer ul.social{
   text-align: center;
 }
 footer ul.social li{
-  font-size: 2.5em;
+  font-size: 2em;
   display: inline;
   padding: 0 2%;
   float: none;
@@ -1169,8 +1158,10 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
 
 
 .copyright_block {
-    background-color: #BE2723;
+    background-color: #2B2B2B;
 }
+
+
 
 #footer .widget {
     margin-bottom: 25px;
@@ -1198,19 +1189,13 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
 
 @media only screen and (min-width: 769px) {
   footer ul.social li {
-    font-size: 3.0em;
+    font-size: 2.0em;
   }
 }
 
 @media only screen and (min-width: 769px) {
   footer ul.social li {
-    font-size: 3.0em;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  footer ul.social li {
-    font-size: 3.5em;
+    font-size: 2.0em;
   }
 }
 
@@ -1223,9 +1208,9 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
   }
 }
 
-/*
- *  Facebook Plugin Widget 
- */
+
+/* Facebook Plugin Widget 
+–––––––––––––––––––––––––––––––––––––––––––––– */
 
 .cff-wrapper {
   /*max-width: 340px;*/
@@ -1271,7 +1256,7 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
     float: none;
     margin-left: 10px;
     margin-right: 10px;
-    padding-top: 0px;
+    padding-top: 0;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -1295,7 +1280,7 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
 .cff-likebox.cff-top.cff-outside {
   /*max-width: 340px;*/
   margin: 0;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 0 10px;
   background: #2b2b2b;
 }
 
@@ -1318,6 +1303,39 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––
+Copyright Block
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer-bar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 20px;
+}
+
+.social-wrap {
+    display: flex;
+    justify-content: center;
+    order: -1;
+    align-items: center;
+}
+
+.footer-bar ul.social {
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-bar ul.social li {
+  flex: 1;
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––
 Custom Effects
 –––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1331,4 +1349,12 @@ Custom Effects
 }
 .bw:hover {
   -webkit-filter: grayscale(100%);
+}
+
+/*Pending removal*/
+.social_block {
+  display: none!important
+}
+.wc3-wrap {
+  display: none;
 }

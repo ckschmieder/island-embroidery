@@ -56,8 +56,7 @@
 				</div>
 			</div>
 			<div class="social_block">
-			<div class="container">
-				
+			<div class="container">				
 					
 						<ul class="social">
 						<li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
@@ -66,17 +65,29 @@
 						<li class="flickr"><a href="#"><i class="fa fa-flickr fa-lg"></i></a></li>
 						<li class="youtube"><a href="#"><i class="fa fa-youtube-square fa-lg"></i></a></li>
 						<li class="linkedin"><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-						</ul>
-						
+						</ul>				
 						
 			</div>
 			</div>
 			<div class="copyright_block">
-				<div class="container">
-					<div class="gutter clearfix">
-						<p class="copyright"><?php  echo esc_html(of_get_option('footer_text_left')); ?></p>
-						<!-- <p class="designby"><?php do_action( 'kage_display_credits' ); ?></p> -->
-					</div>
+				<div class="footer-bar">		
+						<div class="wc3-wrap">
+							<p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" ></a></p>
+						</div>
+						<div class="copyright-wrap">
+							<p class="copyright"><?php  echo esc_html(of_get_option('footer_text_left')); ?></p>
+						</div>
+						<div class="social-wrap">
+							<ul class="social">
+								<li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+								<li class="twitter"><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+								<li class="instagram"><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+								<li class="flickr"><a href="#"><i class="fa fa-flickr fa-lg"></i></a></li>
+								<li class="youtube"><a href="#"><i class="fa fa-youtube-square fa-lg"></i></a></li>
+								<li class="linkedin"><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+							</ul>
+						</div>
+						<!-- <p class="designby"><?php do_action( 'kage_display_credits' ); ?></p> -->					
 				</div>
 			</div>
 

@@ -172,9 +172,11 @@ header a.logo {
 
 .menutop li {
   text-align: center;
-  flex: 1;
+  flex: 1 1 auto;
+  background-color: transparent;
+  transition: .4s ease; 
 }
-
+/*
 .menutop li.first a {
   padding-left: 21px;
 }
@@ -190,7 +192,7 @@ header a.logo {
 .menutop li:last-child a {
   padding-right: 20px;
 }
-
+*/
 .menutop li:hover {
   background-color: #FFF;
 }
@@ -198,22 +200,20 @@ header a.logo {
   font-family: 'embroidery', sans-serif;
   color: #E3E3E3;
   background-color: transparent;
-  transition: .3s ease;  
-  font-size: 22px;
+  transition: .4s ease;  
+  font-size: 20px;
   text-transform: lowercase;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1152px) {
   .menutop a {
-      padding: 10px 0;
-      margin: 0 6px;
-      font-size: 18px;
+      padding: 8px 0;
+      font-size: 20px;
   }
 }
 @media only screen and (min-width: 1152px) {
   .menutop a {
       padding: 12px 0;
-      margin: 0 8px;
       font-size: 22px;
   }
 }

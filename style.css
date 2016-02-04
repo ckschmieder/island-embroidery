@@ -63,8 +63,8 @@ body {
   margin-right: 0;
 }
 
-.space25 {
-  margin: 10px 0;
+.singlepost hr.space25 {
+  margin: 0 0 10px 0;
 }
 
 .container {
@@ -182,28 +182,31 @@ header > .topbar {
     background-color: transparent;  
   }
 
-  .menutop li {
-    text-align: center;
-    flex: 1; 
-  }
-  .menutop li.first a {
-    padding-left: 21px
-  }
-  .menutop li:first-child a {
-    padding-left: 21px;
-  }
-  .menutop li.last a {
-    padding-right: 20px
-  }
-  .menutop li:last-child a {
-    padding-right: 20px;
-  }
+.menutop li {
+  text-align: center;
+  flex: 1; 
+}
+.menutop li.first a {
+  padding-left: 21px
+}
+.menutop li:first-child a {
+  padding-left: 21px;
+}
+.menutop li.last a {
+  padding-right: 20px
+}
+.menutop li:last-child a {
+  padding-right: 20px;
+}
 
+.menutop a.hover {
+  color: #FFFFFF
+}
 .menutop a {
   color: #E3E3E3;
   background-color: transparent;
-  font-size: 1.1em;
-  transition: 0.4s ease;
+  font-size: 1.3em;
+  transition: 0.3s ease;
 }
 
 .menutop a:hover {
@@ -212,7 +215,11 @@ header > .topbar {
   background-color: #FFFFFF;
 }
 .menutop .current-menu-item a {
-  color: #FFFFFF;
+  color: #BE2723;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: inset 0px 0px 8px 2px rgba(190,39,35,0.9);
+  -moz-box-shadow: inset 0px 0px 8px 2px rgba(190,39,35,0.9);
+  box-shadow: inset 0px 0px 8px 2px rgba(190,39,35,0.9);
 }
 
 
@@ -531,7 +538,7 @@ a.hyperlink {
 
 a.hyperlink:hover {
   color: #BE2723;
-  text-decoration: underline; 
+  text-decoration: none; 
 }
 
 a.hyperlink span {
@@ -641,6 +648,27 @@ a.button {
 
 .welcome_text {
     padding: 20px;
+}
+
+/*--------------------------------------------------------------
+About Us Page
+--------------------------------------------------------------*/
+img.ie-staff {
+    border-radius: 7px 7px 7px 7px;   
+}
+
+@media only screen and (max-width: 655px) {
+  img.ie-staff {
+    width: 100%;
+    margin: 15px auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 920px) {
+  img.ie-staff {
+    width: 100%;
+    margin: 15px auto;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1246,7 +1274,7 @@ footer ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
     clear: both;
     margin: 20px 0;
     /*overflow: hidden;*/
-    padding: 20px;
+    padding: 0 20px;
     position: relative;
     width: 100%;
 }

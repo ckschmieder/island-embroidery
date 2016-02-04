@@ -73,11 +73,16 @@
 			</div><!-- container -->
 			<nav class="menucontainer clearfix">					
 				
-				<?php if ( has_nav_menu( 'primary' ) ) { ?>
+				<?php
+				if ( is_front_page() ) {
+					wp_nav_menu(  array( 'menu_class'  => 'menutop', 'menu' => 'Front Page Menu' ) );
+				} elseif ( has_nav_menu( 'primary' ) ) { ?>
 				   <?php wp_nav_menu( array('container'=> '', 'theme_location' => 'primary', 'items_wrap'  => '<ul class="menutop">%3$s</ul>'  ) ); ?>
 				<?php } else { ?>
 					<?php wp_nav_menu(  array( 'menu_class'  => 'menutop') ); ?>	
 				<?php } ?>
+
+				
 			
 				<a class="menuicon" href="#"><?php _e( 'Menu', 'kage' ); ?></a>
 				<?php if ( has_nav_menu( 'primary' ) ) { ?>

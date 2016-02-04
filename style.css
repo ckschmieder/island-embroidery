@@ -5,6 +5,7 @@ Author: Chris S
 Version: 1.0.1442518174
 Updated: 2015-09-17 15:29:34
 */
+
 /* Flexbox Ordering for Home Page 
 ----------------------------------*/
 #main-wrap {
@@ -12,29 +13,12 @@ Updated: 2015-09-17 15:29:34
   flex-direction: column;
 }
 
-#main-slider {
-  order: 0;
-}
-
-#welcome {
-  order: 1;
-}
-
-#portfolio-slider {
-  order: 3;
-}
-
-#services_2 {
-  order: 2;
-}
-
-#old-portfolio-block {
-  order: 5;
-}
-
-#testimonials {
-  order: 6;
-}
+#main-slider {order: 0;}
+#welcome {order: 1;}
+#portfolio-slider {order: 3;}
+#services_2 {order: 2;}
+#old-portfolio-block {order: 5;}
+#testimonials {order: 6;}
 
 /* Fonts 
 ----------------------------------*/
@@ -46,7 +30,7 @@ Updated: 2015-09-17 15:29:34
 }
 
 @font-face {
-  font-family: 'exo_2.0semi_bold';
+  font-family: 'exo_2.0semi_bold',Helvetica,Arial,sans-serif;
   src: url(CSS/fonts/Exo2.0-SemiBold-webfont.eot);
   src: url(CSS/fonts/Exo2.0-SemiBold-webfont.eot?#iefix) format("embedded-opentype"),url(CSS/fonts/Exo2.0-SemiBold-webfont.woff) format("woff"),url(CSS/fonts/Exo2.0-SemiBold-webfont.ttf) format("truetype"),url(CSS/fonts/Exo2.0-SemiBold-webfont.svg#exo_2.0semi_bold) format("svg");
   font-weight: 400;
@@ -180,7 +164,7 @@ header a.logo {
   display: none;
   max-width: 1170px;
   margin: 0 auto;
-  font-family: 'exo_2.0semi_bold';
+  font-family: 'embroidery',Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   background-color: transparent;
@@ -207,29 +191,48 @@ header a.logo {
   padding-right: 20px;
 }
 
-.menutop a.hover {
-  color: #FFF;
+.menutop li:hover {
+  background-color: #FFF;
 }
-
 .menutop a {
+  font-family: 'embroidery', sans-serif;
   color: #E3E3E3;
   background-color: transparent;
-  font-size: 1.3em;
-  transition: .3s ease;
+  transition: .3s ease;  
+  font-size: 22px;
+  text-transform: lowercase;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1152px) {
+  .menutop a {
+      padding: 10px 0;
+      margin: 0 6px;
+      font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1152px) {
+  .menutop a {
+      padding: 12px 0;
+      margin: 0 8px;
+      font-size: 22px;
+  }
+}
 .menutop a:hover {
   text-decoration: none;
   color: #be2723;
-  background-color: #FFF;
+  
 }
-
+.menutop .current-menu-item li {
+  background-color: #FFF!important;
+}
 .menutop .current-menu-item a {
-  color: #BE2723;
-  background-color: #FFF;
-  -webkit-box-shadow: inset 0 0 8px 2px rgba(190,39,35,0.9);
-  -moz-box-shadow: inset 0 0 8px 2px rgba(190,39,35,0.9);
-  box-shadow: inset 0 0 8px 2px rgba(190,39,35,0.9);
+  color: #FFF!important;
+}
+.menutop .current-menu-item a:hover {
+  color: #be2723!important;
+}
+.menutop .sub-menu li:hover {
+  color: #be2723;
 }
 
 .menutopmob a {
@@ -243,17 +246,19 @@ header a.logo {
 
 .menutop .sub-menu a {
   color: #be2723;
+  font-size: 18px;
 }
 
 .menutop .sub-menu a:hover {
   color: #be2723;
 }
 
+
 @media only screen and (min-width: 769px) {
   .menutop {
     display: flex;
     justify-content: space-between;
-    font-family: 'exo_2.0semi_bold';
+    font-family: 'exo_2.0semi_bold',Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     font-size: 15px;
   }
@@ -978,12 +983,12 @@ Styles for social media menu
 }
 
 /* Styles for mixed menu (drop-down + social) */
-.nav-mixed {
+/*.nav-mixed {
   display: flex;
   background: hsl(0,0%,15%);
   flex-wrap: wrap;
   justify-content: space-between;
-}
+}*/
 
 /*--------------------------------------------------------------
 My Footer

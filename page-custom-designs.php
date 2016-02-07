@@ -1,8 +1,6 @@
-<?php 
-/**
- * Template Name: Garments
- * 
- * @package Kage 
+<?php
+/*
+ * Description: Custom page-template for the Custom Designs Page (Dakota Collectibles iframe).
  */
  get_header(); ?>
  <?php while (have_posts()) : the_post(); ?>
@@ -19,11 +17,10 @@
 					<section class="pagesection fullwidthpage">
 						<div class="gutter">
 							<article class="singlepost clearfix">
-								<iframe src="http://www.4logowearables.com/islandembroidery" width="100%" height="2400px" frameborder="0" name="products"> </iframe>
+								<?php the_content(); ?>
+								<iframe src="http://www.dakotacollectibles.com/dc_catalog/default.aspx" width="100%" height="1800" frameborder="0"> </iframe>
 								<div class="clear"></div>
-								<hr class="space25">
-								<p><?php posts_nav_link(); ?></p>
-								<?php comments_template(); ?>
+								<hr class="space25">								
 								<?php kage_paginate_page(); ?> 
 							</article>
 						</div>

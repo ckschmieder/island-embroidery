@@ -1332,6 +1332,13 @@ footer ul.social li.linkedin a:hover {
   .pagesection {
     width: 69.667%;
   }
+  .fullwidthpage {
+    width: 100%;
+  }
+}
+
+.fullwidthpage {
+    width: 100%;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––

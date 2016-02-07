@@ -9,6 +9,7 @@ Updated: 2015-09-17 15:29:34
 /* Flexbox Ordering for Home Page 
 ----------------------------------*/
 #main-wrap {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
 }
@@ -222,6 +223,11 @@ header a.logo {
   color: #be2723;
   
 }
+
+.current-menu-item a {
+    font-weight: 700;
+}
+
 .menutop .current-menu-item li {
   background-color: #FFF!important;
 }
@@ -256,6 +262,7 @@ header a.logo {
 
 @media only screen and (min-width: 769px) {
   .menutop {
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     font-family: 'exo_2.0semi_bold',Helvetica,Arial,sans-serif;
@@ -359,14 +366,19 @@ form.search_form {
 }
 
 #text-4 div {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  -webkit-align-items: center;
   align-items: center;
 }
 
 #googlemapswidget-2 {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -399,6 +411,7 @@ h1 span {
   -webkit-flex-flow: row wrap; 
   flex-flow: row wrap; 
   display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -984,6 +997,7 @@ Styles for social media menu
 
 /* Styles for mixed menu (drop-down + social) */
 /*.nav-mixed {
+  display: -webkit-flex;
   display: flex;
   background: hsl(0,0%,15%);
   flex-wrap: wrap;
@@ -994,6 +1008,7 @@ Styles for social media menu
 My Footer
 --------------------------------------------------------------*/
 .footer-wrap {
+  display: -webkit-flex;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -1004,19 +1019,23 @@ My Footer
 }
 
 ul.social {
+  display: -webkit-flex;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
 }
 
 footer .column3 {
+  display: -webkit-flex;
   display: flex;
   flex-flow: row nowrap;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
 @media screen and (min-width: 769px) {
   .footer-wrap {
+    display: -webkit-flex;
     display: flex;
     flex-flow: row nowrap;
   }
@@ -1087,9 +1106,12 @@ Footer
 
 /* Flexbox stuff */
 #social-menu ul.menusoc {
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -1180,9 +1202,12 @@ footer ul.social li.linkedin a:hover {
 
 /*Flexbox footer*/
 .footer-widget-wrap {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
@@ -1209,9 +1234,12 @@ footer ul.social li.linkedin a:hover {
 
 @media only screen and (min-width: 700px) {
   .footer-widget-wrap {
+    display: -webkit-flex;
     display: flex;
     flex-flow: row nowrap;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
     justify-content: center;
   }
 }
@@ -1237,8 +1265,10 @@ footer ul.social li.linkedin a:hover {
 }
 
 .textwidget {
+  display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
@@ -1308,26 +1338,33 @@ footer ul.social li.linkedin a:hover {
 Copyright Block
 –––––––––––––––––––––––––––––––––––––––––––––– */
 .footer-bar {
+  display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  -webkit-align-items: center;
   align-items: center;
   flex-flow: row wrap;
   margin: 0 20px;
 }
 
 .social-wrap {
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: center;
   justify-content: center;
   order: -1;
+  -webkit-align-items: center;
   align-items: center;
 }
 
 .footer-bar ul.social {
   flex: 1;
+  display: -webkit-flex;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  -webkit-align-items: center;
   align-items: center;
 }
 

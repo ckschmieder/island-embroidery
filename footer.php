@@ -56,18 +56,18 @@
 				</div>
 			</div>
 			<div class="social_block">
-			<div class="container">				
-					
-						<ul class="social">
+				<div class="container">				
+						
+					<ul class="social">
 						<li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
 						<li class="twitter"><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
 						<li class="instagram"><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
 						<li class="flickr"><a href="#"><i class="fa fa-flickr fa-lg"></i></a></li>
 						<li class="youtube"><a href="#"><i class="fa fa-youtube-square fa-lg"></i></a></li>
 						<li class="linkedin"><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-						</ul>				
-						
-			</div>
+					</ul>				
+							
+				</div>
 			</div>
 			<div class="copyright_block">
 				<div class="footer-bar">		

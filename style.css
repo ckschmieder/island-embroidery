@@ -6,6 +6,10 @@ Version: 1.0.1442518174
 Updated: 2015-09-17 15:29:34
 */
 
+.color_blue, a, .menutop .current-menu-item a, .menutop a:hover, .menutop a.hover, .menutop .sub-menu a:hover, .menutop .sub-menu a.hover {
+color: #E3E3E3;
+}
+
 /* Flexbox Ordering for Home Page 
 ----------------------------------*/
 #main-wrap {
@@ -43,7 +47,10 @@ Basic Page Setup
 --------------------------------------------------------------*/
 
 body {
-  background: #F8F8F8;
+  background: #f4f2ec;
+  background: hsl(45, 27%, 94%);
+  color: #76716d;
+  color: hsl(26, 3%, 40%);
   color: #666;
   font-family: 'Open Sans',Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -176,6 +183,7 @@ header a.logo {
   flex: 1 1 auto;
   background-color: transparent;
   transition: .4s ease; 
+  padding: 8px 15px;
 }
 /*
 .menutop li.first a {
@@ -195,7 +203,7 @@ header a.logo {
 }
 */
 .menutop li:hover {
-  background-color: #FFF;
+  /*background-color: #FFF;*/
 }
 .menutop a {
   font-family: 'embroidery', sans-serif;
@@ -204,23 +212,25 @@ header a.logo {
   transition: .4s ease;  
   font-size: 20px;
   text-transform: lowercase;
+  border-radius: 3px;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1152px) {
   .menutop a {
-      padding: 8px 0;
+      padding: 6px;
       font-size: 20px;
   }
 }
 @media only screen and (min-width: 1152px) {
   .menutop a {
-      padding: 12px 0;
+      padding: 6px 0;
       font-size: 22px;
   }
 }
 .menutop a:hover {
   text-decoration: none;
   color: #be2723;
+  background-color: white;
   
 }
 
@@ -232,7 +242,8 @@ header a.logo {
   background-color: #FFF!important;
 }
 .menutop .current-menu-item a {
-  color: #FFF!important;
+  color: #be2723!important;
+  background-color: #fff;
 }
 .menutop .current-menu-item a:hover {
   color: #be2723!important;
@@ -292,10 +303,11 @@ div#services-section {
   padding: 5px;
   margin: 0;
   background-color: transparent;
-  color: #000;
-  background-color: #fff;
-  border-bottom: 2px solid #000;
-  padding: 15px 5px 10px;
+  /*color: #000;*/
+  background-color: #760000;
+  border-bottom: 3px solid #000;
+  border-top: 1px solid #000;
+  /*padding: 15px 5px 10px;*/
   margin-bottom: 0;
 }
 
@@ -320,10 +332,7 @@ form.search_form {
   margin: 0 auto;
 }
 
-.main-slider {
-  padding-top: 3px;
-  margin-bottom: 0;
-}
+
 
 /* Media Queries */
 @media only screen and (min-width:769px) {
@@ -486,8 +495,13 @@ Slick Carousel
 
 /* Main Slider
 ----------------------------*/
+#main-slider {
+    background-color: #313131;
+}
+
 .main-slider {
-  margin: 2px 0;
+  padding-top: 0;
+  margin: 0;
 }
 
 .main-slider img {
@@ -520,7 +534,15 @@ Slick Carousel
 }
 
 .slick-slider {
-  margin-bottom: 0;
+    margin-bottom: 0;
+    /*padding: 0 2em;*/
+    background: hsla(0, 0%, 100%, .1);
+}
+
+@media only screen and (min-width:1153px) {
+  .main-slider {
+    padding: 0 2em;
+  }
 }
 
 .inner {
@@ -1276,7 +1298,7 @@ footer ul.social li.linkedin a:hover {
  *  Posts and Pages 
  */
 .singlepost {
-  background: #FFF;
+  /*background: #FFF;*/
   clear: both;
   margin: 20px 0;
 /*overflow: hidden;*/

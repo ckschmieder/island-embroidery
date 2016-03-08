@@ -85,7 +85,10 @@
 				
 			
 				<a class="menuicon" href="#"><?php _e( 'Menu', 'kage' ); ?></a>
-				<?php if ( has_nav_menu( 'primary' ) ) { ?>
+				<?php 
+				if ( is_front_page() ) {
+					wp_nav_menu(  array( 'menu_class'  => 'menutopmob', 'menu' => 'Front Page Menu' ) );
+				} elseif ( has_nav_menu( 'primary' ) ) { ?>
 				   <?php wp_nav_menu( array('container'=> '', 'theme_location' => 'primary', 'items_wrap'  => '<ul class="menutopmob">%3$s</ul>'  ) ); ?>
 				<?php } else { ?>
 					<?php wp_nav_menu(  array( 'menu_class'  => 'menutopmob' ) ); ?>	
